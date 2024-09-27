@@ -3,13 +3,13 @@ import json
 from pydub import AudioSegment
 
 import random
-def get_audio(text:str, voice_id:str="us-male-2", model:str="vits")->str: #returns path to saved audio file
+def get_audio(text:str, voice_id:str="us-male-2", model:str="ar-diff-50k")->str: #returns path to saved audio file
     response = requests.request(
     method="POST",
     url="https://api.neets.ai/v1/tts",
     headers={
         "Content-Type": "application/json",
-        "X-API-Key": "1bac98feba5348abbd2cd66cfdda612f"
+        "X-API-Key": "8a931ab0981d432d96a59605635c51fd"
     },
     json={
         "text": text,

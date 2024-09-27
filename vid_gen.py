@@ -39,29 +39,45 @@ def create_frame(background_url, left_char_path, right_char_path, dialogue_text,
         print(f"Error downloading or opening background image: {e}")
         background = Image.new('RGBA', (1344, 768), (0, 0, 0, 255))  # Create a black background as fallback
 
-    # Function to load image from URL or local path
-    def load_image(path):
+    # Function to load and resize image while maintaining aspect ratio
+    def load_and_resize_image(path, max_width, max_height):
         if "https://" in path:
             response = requests.get(path)
             response.raise_for_status()
-            return Image.open(BytesIO(response.content)).convert('RGBA')
+            img = Image.open(BytesIO(response.content)).convert('RGBA')
         else:
-            return Image.open(path).convert('RGBA')
+            img = Image.open(path).convert('RGBA')
+        
+        # Calculate aspect ratio
+        aspect_ratio = img.width / img.height
+        
+        # Determine new size while maintaining aspect ratio
+        if aspect_ratio > 1:  # Width is greater than height
+            new_width = min(max_width, img.width)
+            new_height = int(new_width / aspect_ratio)
+        else:  # Height is greater than or equal to width
+            new_height = min(max_height, img.height)
+            new_width = int(new_height * aspect_ratio)
+        
+        return img.resize((new_width, new_height), Image.LANCZOS)
 
     # Add characters if paths are provided
+    max_char_width = int(1344 * 0.3)
+    max_char_height = int(768 * 0.8)
+    
     if left_char_path:
         try:
-            left_char = load_image(left_char_path)
-            left_char = left_char.resize((int(1344*0.3), int(768*0.8)))
-            background.paste(left_char, (int(1344*0.1), int(768*0.2)), left_char)
+            left_char = load_and_resize_image(left_char_path, max_char_width, max_char_height)
+            left_pos = (int(1344 * 0.1), 768 - left_char.height)
+            background.paste(left_char, left_pos, left_char)
         except Exception as e:
             print(f"Error opening left character image: {e}")
 
     if right_char_path:
         try:
-            right_char = load_image(right_char_path)
-            right_char = right_char.resize((int(1344*0.3), int(768*0.8)))
-            background.paste(right_char, (int(1344*0.6), int(768*0.2)), right_char)
+            right_char = load_and_resize_image(right_char_path, max_char_width, max_char_height)
+            right_pos = (1344 - int(1344 * 0.1) - right_char.width, 768 - right_char.height)
+            background.paste(right_char, right_pos, right_char)
         except Exception as e:
             print(f"Error opening right character image: {e}")
 
@@ -99,68 +115,73 @@ def get_audio_duration(audio_file):
     audio = AudioSegment.from_file(audio_file)
     return len(audio) / 1000.0  # Convert milliseconds to seconds
 
+import os
+import subprocess
+from pydub import AudioSegment
+import tempfile
+import tqdm
+
 def create_video(scenes, output_file):
-    frame_files = []
-    audio_files = []
     frame_number = 0
+    video_segments = []
 
     with tempfile.TemporaryDirectory() as temp_dir:
         for scene in tqdm.tqdm(scenes):
             background_url = scene['background']
             for dialogue in scene['dialogues']:
+                # Prepare frame
                 if dialogue['id'] != "Narrator":
                     left_char_path = os.path.join('/Users/cisco/Documents/CisStuff/corny', dialogue['character_image'])
                 else:
                     left_char_path = None
-                right_char_path = None  # We're not handling multiple characters in this example
-                
+                right_char_path = None
+
                 frame_path = create_frame(background_url, left_char_path, right_char_path, dialogue['text'], frame_number)
-                frame_files.append(frame_path)
-                print(dialogue)
+
+                # Prepare audio
                 audio_file = dialogue['tts_audio']
-                if os.path.exists(audio_file):
-                    audio_files.append(audio_file)
-                else:
-                    # Create a silent audio file if the TTS audio doesn't exist
-                    silent_audio = AudioSegment.silent(duration=3000)  # 3 seconds of silence
-                    silent_audio_path = os.path.join(temp_dir, f"silent_{frame_number}.wav")
-                    silent_audio.export(silent_audio_path, format="wav")
-                    audio_files.append(silent_audio_path)
-                
+                # Ensure audio duration matches the frame duration
+
+                # Generate video segment
+                segment_file = os.path.join(temp_dir, f'segment_{frame_number}.mp4')
+                ffmpeg_cmd = [
+                    'ffmpeg',
+                    '-y',  # Overwrite output files without asking
+                    '-loop', '1',
+                    '-i', frame_path,
+                    '-i', audio_file,
+                    '-c:v', 'libx264',
+                    '-tune', 'stillimage',
+                    '-c:a', 'aac',
+                    '-b:a', '192k',
+                    '-shortest',
+                    segment_file
+                ]
+                subprocess.run(ffmpeg_cmd, check=True)
+                video_segments.append(segment_file)
+
                 frame_number += 1
 
-        # Prepare ffmpeg command
-        ffmpeg_cmd = ['ffmpeg']
-        
-        # Add input files
-        for frame, audio in zip(frame_files, audio_files):
-            ffmpeg_cmd.extend(['-i', frame, '-i', audio])
-        
-        # Prepare filter complex
-        filter_complex = []
-        for i in range(len(frame_files)):
-            filter_complex.append(f'[{i*2}:v][{i*2+1}:a]')
-        
-        filter_complex.append(f'concat=n={len(frame_files)}:v=1:a=1[outv][outa]')
-        
-        # Complete the ffmpeg command
-        ffmpeg_cmd.extend([
-            '-filter_complex', ''.join(filter_complex),
-            '-map', '[outv]',
-            '-map', '[outa]',
-            output_file
-        ])
-        
-        # Execute ffmpeg command
-        try:
-            subprocess.run(ffmpeg_cmd, check=True)
-            print(f"Video created successfully: {output_file}")
-        except subprocess.CalledProcessError as e:
-            print(f"Error creating video: {e}")
+        # Write the list of segments into a file
+        filelist_path = os.path.join(temp_dir, 'filelist.txt')
+        with open(filelist_path, 'w') as f:
+            for segment_file in video_segments:
+                f.write(f"file '{segment_file}'\n")
 
-        # Clean up frame files
-        for file in frame_files:
-            os.remove(file)
+        # Concatenate the segments
+        ffmpeg_cmd = [
+            'ffmpeg',
+            '-y',  # Overwrite output files without asking
+            '-f', 'concat',
+            '-safe', '0',
+            '-i', filelist_path,
+            '-c', 'copy',
+            output_file
+        ]
+        subprocess.run(ffmpeg_cmd, check=True)
+
+    print(f"Video created successfully: {output_file}")
+
 
 if __name__ == "__main__":
     xml_file = "/Users/cisco/Documents/CisStuff/corny/screenplay.xml"  # Replace with your XML file path
