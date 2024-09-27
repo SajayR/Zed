@@ -1,685 +1,195 @@
 <scenes><scene>
-        <background>The interior of the Dursleys' home, number four, Privet Drive. The room is tidy and ordinary, with a small television in the corner and a few family photos on the walls. The atmosphere is dull and uneventful.</background>
+        <background image="https://replicate.delivery/yhqm/8Car4bYbpd4eBif0pbz0E3zAq7WD9kwKI5h6YGfGZHexkfIcC/out-0.webp">The interior of the Dursleys' home, number four, Privet Drive. The room is tidy and ordinary, with a small television in the corner and a few family photos on the walls. The atmosphere is dull and uneventful.</background>
         <dialogues>
-            <dialogue id="Narrator">Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much.</dialogue>
-            <dialogue id="Narrator">They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense.</dialogue>
-            <dialogue id="Mr. Dursley">Humming to himself as he picked out his most boring tie for work.</dialogue>
-            <dialogue id="Mrs. Dursley">Gossiping away happily as she wrestled a screaming Dudley into his high chair.</dialogue>
-            <dialogue id="Narrator">None of them noticed a large, tawny owl flutter past the window.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/pcdiqzcguu.mp3">Mr. and Mrs. Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/rmlpgvygea.mp3">They were the last people you'd expect to be involved in anything strange or mysterious, because they just didn't hold with such nonsense.</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/mjncycchdy.mp3">Humming to himself as he picked out his most boring tie for work.</dialogue>
+            <dialogue id="Mrs. Dursley" character_image="clear_characters/nkSNGpkD6u.png" character_voice="vits-eng-187" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/epmjxnqpgc.mp3">Gossiping away happily as she wrestled a screaming Dudley into his high chair.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ehbytrxkxl.mp3">None of them noticed a large, tawny owl flutter past the window.</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>The exterior of the Dursleys' home, number four, Privet Drive. The house is small and ordinary, with a tidy garden and a "Welcome to our Home" doormat. The atmosphere is quiet and suburban.</background>
+        <background image="https://replicate.delivery/yhqm/MJgZsLe85VTkVi8xHZRzIXcs7HefZzgEf9eNXexMlzOokejwJA/out-0.webp">The exterior of the Dursleys' home, number four, Privet Drive. The house is small and ordinary, with a tidy garden and a "Welcome to our Home" doormat. The atmosphere is quiet and suburban.</background>
         <dialogues>
-            <dialogue id="Narrator">When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story starts, there was nothing about the cloudy sky outside to suggest that strange and mysterious things would soon be happening all over the country.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/zwyupjxzzn.mp3">When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday our story starts, there was nothing about the cloudy sky outside to suggest that strange and mysterious things would soon be happening all over the country.</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>The interior of the Dursleys' kitchen, where Mrs. Dursley is busy making breakfast. The room is small and cluttered, with dirty dishes piled up in the sink. The atmosphere is chaotic and noisy.</background>
+        <background image="https://replicate.delivery/yhqm/6ahY5lFApeyuHSYH2Or1PQyQnC5cTf8wbzwnyPAuzXeo0PCnA/out-0.webp">The interior of the Dursleys' kitchen, where Mrs. Dursley is busy making breakfast. The room is small and cluttered, with dirty dishes piled up in the sink. The atmosphere is chaotic and noisy.</background>
         <dialogues>
-            <dialogue id="Mrs. Dursley">Gossiping away happily as she wrestled a screaming Dudley into his high chair.</dialogue>
-            <dialogue id="Dudley">Screaming and crying as he is forced into his high chair.</dialogue>
-            <dialogue id="Mr. Dursley">Humming to himself as he prepares for work.</dialogue>
+            <dialogue id="Mrs. Dursley" character_image="clear_characters/nkSNGpkD6u.png" character_voice="vits-eng-187" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/yxogjwhvig.mp3">Gossiping away happily as she wrestled a screaming Dudley into his high chair.</dialogue>
+            <dialogue id="Dudley" character_image="clear_characters/LkWlWJjw8Z.png" character_voice="vits-eng-118" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/iekeypkusl.mp3">Screaming and crying as he is forced into his high chair.</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/tockvyclos.mp3">Humming to himself as he prepares for work.</dialogue>
         </dialogues>
     </scene><scene>
-        <background>The interior of the Dursleys' home, specifically the kitchen where Dudley is having a tantrum.</background>
+        <background image="https://replicate.delivery/yhqm/65YI4NQef8lJhUnQYNiQtf4unbeAJiEY9buqvcvbvDSoqfIcC/out-0.webp">The interior of the Dursleys' home, specifically the kitchen where Dudley is having a tantrum.</background>
         <dialogues>
-            <dialogue id="Narrator">"Little tyke,"</dialogue>
-            <dialogue id="Mr. Dursley">"Little tyke,"</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/eylqnaumam.mp3">"Little tyke,"</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ahpaemgjkh.mp3">"Little tyke,"</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>The exterior of the Dursleys' home, specifically the corner of Privet Drive where Mr. Dursley notices a cat.</background>
+        <background image="https://replicate.delivery/yhqm/0UVzeY3vJo2ABiVS37ely02d7t7McKOL2OzoJZCbEeGi1PCnA/out-0.webp">The exterior of the Dursleys' home, specifically the corner of Privet Drive where Mr. Dursley notices a cat.</background>
         <dialogues>
-            <dialogue id="Narrator">"For a second, Mr. Dursley didn't realize what he had seen -- then he jerked his head around to look again."</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ptfkrsqmfr.mp3">"For a second, Mr. Dursley didn't realize what he had seen -- then he jerked his head around to look again."</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>The interior of Mr. Dursley's car, as he drives towards town.</background>
+        <background image="https://replicate.delivery/yhqm/hIfmX9RIutTyPi2M8VO1q7BAE06RLH79oTuxGRCQffwo1PCnA/out-0.webp">The interior of Mr. Dursley's car, as he drives towards town.</background>
         <dialogues>
-            <dialogue id="Narrator">"But on the edge of town, drills were driven out of his mind by something else."</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/rshgttzvkp.mp3">"But on the edge of town, drills were driven out of his mind by something else."</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>A busy street in the Muggle world, with people in cloaks standing around.</background>
+        <background image="https://replicate.delivery/yhqm/6bcAYHqU9eyiR6GkR6K4vMf0y68PGYxhcIdNGNi1NBk36HhTA/out-0.webp">A busy street in the Muggle world, with people in cloaks standing around.</background>
         <dialogues>
-            <dialogue id="Narrator">"As he sat in the usual morning traffic jam, he couldn't help noticing that there seemed to be a lot of strangely dressed people about."</dialogue>
-            <dialogue id="Mr. Dursley">"The nerve of him!"</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/uvshvhhsod.mp3">"As he sat in the usual morning traffic jam, he couldn't help noticing that there seemed to be a lot of strangely dressed people about."</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ftaeoqhqgu.mp3">"The nerve of him!"</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>The Grunnings parking lot, where Mr. Dursley arrives.</background>
+        <background image="https://replicate.delivery/yhqm/hYLhLi934uoQNN753iBUWkVxzY79tI4VsxeifBPAtJk76HhTA/out-0.webp">The Grunnings parking lot, where Mr. Dursley arrives.</background>
         <dialogues>
-            <dialogue id="Narrator">"The traffic moved on and a few minutes later, Mr. Dursley arrived in the Grunnings parking lot, his mind back on drills."</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/sgvxfnewtn.mp3">"The traffic moved on and a few minutes later, Mr. Dursley arrived in the Grunnings parking lot, his mind back on drills."</dialogue>
         </dialogues>
     </scene><scene>
-    <background>The interior of Mr. Dursley's office on the ninth floor, with a large window behind him and a desk covered in papers and office supplies.</background>
+    <background image="https://replicate.delivery/yhqm/OrrDeV63netwWUS3vfi8eYEssbsnRQXBjreYwETyorSvXfR4E/out-0.webp">The interior of Mr. Dursley's office on the ninth floor, with a large window behind him and a desk covered in papers and office supplies.</background>
     <dialogues>
-      <dialogue id="Narrator">Mr. Dursley always sat with his back to the window in his office on the ninth floor.</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/zsevjriuoq.mp3">Mr. Dursley always sat with his back to the window in his office on the ninth floor.</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>A street in the Muggle world, with people pointing and gazing open-mouthed as owls fly overhead.</background>
+    <background image="https://replicate.delivery/yhqm/J5vARcdReLWYfUjAwIIUQmlXUxUoq0xP4jkgfvbKArSB2PCnA/out-0.webp">A street in the Muggle world, with people pointing and gazing open-mouthed as owls fly overhead.</background>
     <dialogues>
-      <dialogue id="Narrator">If he hadn't, he might have found it harder to concentrate on drills that morning.</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/cwvcrnycjj.mp3">If he hadn't, he might have found it harder to concentrate on drills that morning.</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>A bakery, with a display of fresh bread and pastries in the window and a sign above the door reading "Bakery".</background>
+    <background image="https://replicate.delivery/yhqm/jDVBIhPRz0ZFJd2qvsRFBskf9fNr4Hfw04PUSN3Get5GsfIcC/out-0.webp">A bakery, with a display of fresh bread and pastries in the window and a sign above the door reading "Bakery".</background>
     <dialogues>
-      <dialogue id="Mr. Dursley">He'd forgotten all about the people in cloaks until he passed a group of them next to the baker's.</dialogue>
-      <dialogue id="Narrator">He eyed them angrily as he passed.</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/aqdfbekkty.mp3">He'd forgotten all about the people in cloaks until he passed a group of them next to the baker's.</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/xslvvwmuop.mp3">He eyed them angrily as he passed.</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>The same bakery, with Mr. Dursley walking back past the group of people in cloaks, clutching a large doughnut in a bag.</background>
+    <background image="https://replicate.delivery/yhqm/f40YxkLutMUQNyIGek36iyDOfmJlVllSbDxdM4NYOUfTsfIcC/out-0.webp">The same bakery, with Mr. Dursley walking back past the group of people in cloaks, clutching a large doughnut in a bag.</background>
     <dialogues>
-      <dialogue id="Unknown">"The Potters, that's right, that's what I heard yes, their son, Harry"</dialogue>
-      <dialogue id="Mr. Dursley">He stopped dead. Fear flooded him.</dialogue>
+      <dialogue id="Unknown" character_image="clear_characters/b8KejJ4fYV.png" character_voice="vits-eng-26" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/haepmhmmae.mp3">"The Potters, that's right, that's what I heard yes, their son, Harry"</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/qsdkqapekl.mp3">He stopped dead. Fear flooded him.</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>The interior of Mr. Dursley's office again, with Mr. Dursley sitting at his desk, looking worried.</background>
+    <background image="https://replicate.delivery/yhqm/WAPgkKwFf1SAVq7daby1xKfUjJtuI0jnTvwuei3sgdeOtfIcC/out-0.webp">The interior of Mr. Dursley's office again, with Mr. Dursley sitting at his desk, looking worried.</background>
     <dialogues>
-      <dialogue id="Mr. Dursley">He was being stupid. Potter wasn't such an unusual name.</dialogue>
-      <dialogue id="Mr. Dursley">He was sure there were lots of people called Potter who had a son called Harry.</dialogue>
-      <dialogue id="Mr. Dursley">Come to think of it, he wasn't even sure his nephew was called Harry.</dialogue>
-      <dialogue id="Mr. Dursley">He'd never even seen the boy. It might have been Harvey. Or Harold.</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/zkpivdcdbr.mp3">He was being stupid. Potter wasn't such an unusual name.</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/gfmucvtpko.mp3">He was sure there were lots of people called Potter who had a son called Harry.</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/qcejqnpwws.mp3">Come to think of it, he wasn't even sure his nephew was called Harry.</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/nwuobepkbs.mp3">He'd never even seen the boy. It might have been Harvey. Or Harold.</dialogue>
     </dialogues>
   </scene><scene>
-        <background>The exterior of a building, with people walking in and out of the entrance. The atmosphere is busy and urban.</background>
+        <background image="https://replicate.delivery/yhqm/0EnT8eTskAzDYSDErzEo9zn1F37j8qBKXGhi5KycNInr9jwJA/out-0.webp">The exterior of a building, with people walking in and out of the entrance. The atmosphere is busy and urban.</background>
         <dialogues>
-            <dialogue id="Narrator">lot harder to concentrate on drills that afternoon and when he left the building at five o'clock, he was still so worried that he walked straight into someone just outside the door.</dialogue>
-            <dialogue id="Mr. Dursley">Sorry,</dialogue>
-            <dialogue id="Unknown">Don't be sorry, my dear sir, for nothing could upset me today! Rejoice, for You-Know-Who has gone at last! Even Muggles like yourself should be celebrating, this happy, happy day!</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/tduzlcvtlz.mp3">lot harder to concentrate on drills that afternoon and when he left the building at five o'clock, he was still so worried that he walked straight into someone just outside the door.</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ssyilhxzmw.mp3">Sorry,</dialogue>
+            <dialogue id="Unknown" character_image="clear_characters/b8KejJ4fYV.png" character_voice="vits-eng-26" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/wftklgjgfm.mp3">Don't be sorry, my dear sir, for nothing could upset me today! Rejoice, for You-Know-Who has gone at last! Even Muggles like yourself should be celebrating, this happy, happy day!</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>The driveway of number four, with a small garden and a tabby cat sitting on the garden wall. The atmosphere is quiet and suburban.</background>
+        <background image="https://replicate.delivery/yhqm/uJH3zA7oxtKPJRY1yCxQTmyhVqBlCSQv48CFPv3COfHt9jwJA/out-0.webp">The driveway of number four, with a small garden and a tabby cat sitting on the garden wall. The atmosphere is quiet and suburban.</background>
         <dialogues>
-            <dialogue id="Narrator">As he pulled into the driveway of number four, the first thing he saw -- and it didn't improve his mood -- was the tabby cat he'd spotted that morning. It was now sitting on his garden wall.</dialogue>
-            <dialogue id="Mr. Dursley">Shoo!</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/trcyvliiqu.mp3">As he pulled into the driveway of number four, the first thing he saw -- and it didn't improve his mood -- was the tabby cat he'd spotted that morning. It was now sitting on his garden wall.</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/wiecaabpdh.mp3">Shoo!</dialogue>
         </dialogues>
     </scene> <scene>
-        <background>The interior of the Dursleys' home, with a dinner table set and a television playing in the background. The atmosphere is cozy and domestic.</background>
+        <background image="https://replicate.delivery/yhqm/AiyVyTAbBd7iNZh2KdnPytrKthmSGIHRpVq6t4GmFqw3ejwJA/out-0.webp">The interior of the Dursleys' home, with a dinner table set and a television playing in the background. The atmosphere is cozy and domestic.</background>
         <dialogues>
-            <dialogue id="Mrs. Dursley">I told him over dinner all about Mrs. Next Door's problems with her daughter and how Dudley had learned a new word ("Won't!").</dialogue>
-            <dialogue id="Mr. Dursley">(trying to act normally)</dialogue>
-            <dialogue id="Narrator">When Dudley had been put to bed, he went into the living room in time to catch the last report on the evening news:</dialogue>
-            <dialogue id="News Anchor">And finally, bird-watchers everywhere have reported that the nation's owls have been behaving very unusually today. Although owls normally</dialogue>
+            <dialogue id="Mrs. Dursley" character_image="clear_characters/nkSNGpkD6u.png" character_voice="vits-eng-187" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/hrgzgnkcpg.mp3">I told him over dinner all about Mrs. Next Door's problems with her daughter and how Dudley had learned a new word ("Won't!").</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/uhaasgabgx.mp3">(trying to act normally)</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/bhfjczuhgc.mp3">When Dudley had been put to bed, he went into the living room in time to catch the last report on the evening news:</dialogue>
+            <dialogue id="News Anchor" character_image="clear_characters/1YFb42miwh.png" character_voice="vits-eng-202" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/lrezowjubx.mp3">And finally, bird-watchers everywhere have reported that the nation's owls have been behaving very unusually today. Although owls normally</dialogue>
         </dialogues>
     </scene><scene>
-        <background>A living room with a TV, armchairs, and a coffee table. The room is tidy and ordinary, with a hint of suburban comfort.</background>
+        <background image="https://replicate.delivery/yhqm/6LImoR8VrBItC9vl6CWaNKOJeuwxhf9g2qiHqm0IRRffufIcC/out-0.webp">A living room with a TV, armchairs, and a coffee table. The room is tidy and ordinary, with a hint of suburban comfort.</background>
         <dialogues>
-            <dialogue id="News Anchor">"Normally hunt at night and are hardly ever seen in daylight, there have been hundreds of sightings of these birds flying in every direction since sunrise. Experts are unable to explain why the owls have suddenly changed their sleeping pattern."</dialogue>
-            <dialogue id="News Anchor">"Most mysterious. And now, over to Jim McGuffin with the weather. Going to be any more showers of owls tonight, Jim?"</dialogue>
-            <dialogue id="Jim McGuffin">"Well, Ted, I don't know about that, but it's not only the owls that have been acting oddly today. Viewers as far apart as Kent, Yorkshire, and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they've had a downpour of shooting stars! Perhaps people have been celebrating Bonfire Night early -- it's not until next week, folks! But I can promise a wet night tonight."</dialogue>
-            <dialogue id="Mr. Dursley">"Er -- Petunia, dear -- you haven't heard from your sister lately, have you?"</dialogue>
-            <dialogue id="Mrs. Dursley">"No. Why?"</dialogue>
-            <dialogue id="Mr. Dursley">"Funny stuff on the news. Owls... shooting stars... and there were a lot of funny-looking people in town today..."</dialogue>
-            <dialogue id="Mrs. Dursley">"So?"</dialogue>
-            <dialogue id="Mr. Dursley">"Well, I just thought... maybe... it was something to do with... you know... her crowd."</dialogue>
-            <dialogue id="Mrs. Dursley">"I suppose so."</dialogue>
-            <dialogue id="Mr. Dursley">"Their son -- he'd be about Dudley's age now, wouldn't he?"</dialogue>
-            <dialogue id="Mrs. Dursley">"Harry. Nasty, common name, if you ask me."</dialogue>
+            <dialogue id="News Anchor" character_image="clear_characters/1YFb42miwh.png" character_voice="vits-eng-202" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/leetsjumgu.mp3">"Normally hunt at night and are hardly ever seen in daylight, there have been hundreds of sightings of these birds flying in every direction since sunrise. Experts are unable to explain why the owls have suddenly changed their sleeping pattern."</dialogue>
+            <dialogue id="News Anchor" character_image="clear_characters/1YFb42miwh.png" character_voice="vits-eng-202" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/yujihqhmnp.mp3">"Most mysterious. And now, over to Jim McGuffin with the weather. Going to be any more showers of owls tonight, Jim?"</dialogue>
+            <dialogue id="Jim McGuffin" character_image="clear_characters/GJB42AL6Yi.png" character_voice="vits-eng-124" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/uzoxwpgfbf.mp3">"Well, Ted, I don't know about that, but it's not only the owls that have been acting oddly today. Viewers as far apart as Kent, Yorkshire, and Dundee have been phoning in to tell me that instead of the rain I promised yesterday, they've had a downpour of shooting stars! Perhaps people have been celebrating Bonfire Night early -- it's not until next week, folks! But I can promise a wet night tonight."</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/rolkeiljsh.mp3">"Er -- Petunia, dear -- you haven't heard from your sister lately, have you?"</dialogue>
+            <dialogue id="Mrs. Dursley" character_image="clear_characters/nkSNGpkD6u.png" character_voice="vits-eng-187" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/dmmtfgicpa.mp3">"No. Why?"</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/idgaqdksui.mp3">"Funny stuff on the news. Owls... shooting stars... and there were a lot of funny-looking people in town today..."</dialogue>
+            <dialogue id="Mrs. Dursley" character_image="clear_characters/nkSNGpkD6u.png" character_voice="vits-eng-187" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/zprxvupkip.mp3">"So?"</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/hgeacknxga.mp3">"Well, I just thought... maybe... it was something to do with... you know... her crowd."</dialogue>
+            <dialogue id="Mrs. Dursley" character_image="clear_characters/nkSNGpkD6u.png" character_voice="vits-eng-187" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ekogbcccdq.mp3">"I suppose so."</dialogue>
+            <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/jayvfkewce.mp3">"Their son -- he'd be about Dudley's age now, wouldn't he?"</dialogue>
+            <dialogue id="Mrs. Dursley" character_image="clear_characters/nkSNGpkD6u.png" character_voice="vits-eng-187" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ixqpqxciua.mp3">"Harry. Nasty, common name, if you ask me."</dialogue>
         </dialogues>
     </scene><scene>
-    <background>The interior of the Dursleys' bedroom, a small and ordinary room with a double bed and a window that looks out onto Privet Drive. The room is dimly lit, with only a small nightlight on.</background>
+    <background image="https://replicate.delivery/yhqm/z0QliCQEk55QLlezx0fFrSPtE4hy4K79z51Zkdj8A62J8HhTA/out-0.webp">The interior of the Dursleys' bedroom, a small and ordinary room with a double bed and a window that looks out onto Privet Drive. The room is dimly lit, with only a small nightlight on.</background>
     <dialogues>
-      <dialogue id="Narrator">"He didn't say another word on the subject as they went upstairs to bed."</dialogue>
-      <dialogue id="Mr. Dursley">"Yes, I quite agree."</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/uaeqmjwxrz.mp3">"He didn't say another word on the subject as they went upstairs to bed."</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/vquxylscwb.mp3">"Yes, I quite agree."</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>The Dursleys' bedroom window, looking out onto the front garden and Privet Drive. The cat is sitting on the wall, staring down the street.</background>
+    <background image="https://replicate.delivery/yhqm/dLogqff4nvuTOkobfXzP18iqW9JMSybkF01il3RI5NHX4PCnA/out-0.webp">The Dursleys' bedroom window, looking out onto the front garden and Privet Drive. The cat is sitting on the wall, staring down the street.</background>
     <dialogues>
-      <dialogue id="Narrator">"The cat was still there. It was staring down Privet Drive as though it were waiting for something."</dialogue>
-      <dialogue id="Mr. Dursley">"Was he imagining things? Could all this have anything to do with the Potters?"</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/vnwzicdhnt.mp3">"The cat was still there. It was staring down Privet Drive as though it were waiting for something."</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/sistswjsha.mp3">"Was he imagining things? Could all this have anything to do with the Potters?"</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>The Dursleys' bedroom, with Mr. and Mrs. Dursley in bed. The room is dark and quiet, with only the sound of Mrs. Dursley's gentle snores.</background>
+    <background image="https://replicate.delivery/yhqm/gXUmKlyxmEZSD10Yl1Tnq3znZS3AR9maRLDhZeePkG4N8HhTA/out-0.webp">The Dursleys' bedroom, with Mr. and Mrs. Dursley in bed. The room is dark and quiet, with only the sound of Mrs. Dursley's gentle snores.</background>
     <dialogues>
-      <dialogue id="Narrator">"The Dursleys got into bed. Mrs. Dursley fell asleep quickly but Mr. Dursley lay awake, turning it all over in his mind."</dialogue>
-      <dialogue id="Mr. Dursley">"If it did... if it got out that they were related to a pair of-- well, he didn't think he could bear it."</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/couojwfryo.mp3">"The Dursleys got into bed. Mrs. Dursley fell asleep quickly but Mr. Dursley lay awake, turning it all over in his mind."</dialogue>
+      <dialogue id="Mr. Dursley" character_image="clear_characters/Oo9ypgYfvr.png" character_voice="vits-eng-163" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/qtlxcpwhsb.mp3">"If it did... if it got out that they were related to a pair of-- well, he didn't think he could bear it."</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>The front garden and Privet Drive, with the cat still sitting on the wall. The street is quiet and dark, with only a few streetlights casting a faint glow.</background>
+    <background image="https://replicate.delivery/yhqm/ufcAWilEB6UnQqRuGHUrxrI1LAte5tuze7GseoRbM7nHxfIcC/out-0.webp">The front garden and Privet Drive, with the cat still sitting on the wall. The street is quiet and dark, with only a few streetlights casting a faint glow.</background>
     <dialogues>
-      <dialogue id="Narrator">"The cat on the wall outside was showing no sign of sleepiness."</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/venunvglni.mp3">"The cat on the wall outside was showing no sign of sleepiness."</dialogue>
     </dialogues>
   </scene> <scene>
-    <background>The corner of Privet Drive, where the cat has been watching. A man has suddenly appeared, tall and thin with silver hair and a long beard. He is wearing long robes and high-heeled boots.</background>
+    <background image="https://replicate.delivery/yhqm/2Q7sTfvk6emeXId4rmIUEuD2FUEdClQeyfIzsvR3M7JdifR4E/out-0.webp">The corner of Privet Drive, where the cat has been watching. A man has suddenly appeared, tall and thin with silver hair and a long beard. He is wearing long robes and high-heeled boots.</background>
     <dialogues>
-      <dialogue id="Narrator">"A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just popped out of the ground."</dialogue>
+      <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/rucvbycpbs.mp3">"A man appeared on the corner the cat had been watching, appeared so suddenly and silently you'd have thought he'd just popped out of the ground."</dialogue>
     </dialogues>
   </scene><scene>
-        <background>A dimly lit street in the Muggle world, with old-fashioned street lamps casting a warm glow. The houses are small and ordinary, with neat gardens and tidy curtains. The atmosphere is quiet and suburban.</background>
+        <background image="https://replicate.delivery/yhqm/Oe5O2kSaXfqvpEassRB376eAwvk0wpGpLCwsAGuvkJeVxfIcC/out-0.webp">A dimly lit street in the Muggle world, with old-fashioned street lamps casting a warm glow. The houses are small and ordinary, with neat gardens and tidy curtains. The atmosphere is quiet and suburban.</background>
         <dialogues>
-            <dialogue id="Narrator">It had been broken at least twice. This man's name was Albus Dumbledore.</dialogue>
-            <dialogue id="Narrator">Albus Dumbledore didn't seem to realize that he had just arrived in a street where everything from his name to his boots was unwelcome.</dialogue>
-            <dialogue id="Albus Dumbledore">I should have known.</dialogue>
-            <dialogue id="Narrator">He found what he was looking for in his inside pocket. It seemed to be a silver cigarette lighter.</dialogue>
-            <dialogue id="Narrator">He flicked it open, held it up in the air, and clicked it. The nearest street lamp went out with a little pop.</dialogue>
-            <dialogue id="Narrator">He clicked it again -- the next lamp flickered into darkness.</dialogue>
-            <dialogue id="Narrator">Twelve times he clicked the Put-Outer, until the only lights left on the whole street were two tiny pinpricks in the distance, which were the eyes of the cat watching him.</dialogue>
-            <dialogue id="Albus Dumbledore">Fancy seeing you here, Professor McGonagall.</dialogue>
-            <dialogue id="Professor McGonagall">How did you know it was me?</dialogue>
-            <dialogue id="Albus Dumbledore">My dear Professor, I've never seen a cat sit so stiffly.</dialogue>
-            <dialogue id="Professor McGonagall">You'd be stiff if you'd been sitting on a brick wall all day.</dialogue>
-            <dialogue id="Albus Dumbledore">All day? When you could have been celebrating? I must have passed a dozen feasts and parties on my way here.</dialogue>
-            <dialogue id="Professor McGonagall">Oh yes, everyo...</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/kyjyrqroup.mp3">It had been broken at least twice. This man's name was Albus Dumbledore.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/pjajjrwves.mp3">Albus Dumbledore didn't seem to realize that he had just arrived in a street where everything from his name to his boots was unwelcome.</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/meuvvgtxnd.mp3">I should have known.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/lzvchqtpks.mp3">He found what he was looking for in his inside pocket. It seemed to be a silver cigarette lighter.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/jyazbzehvk.mp3">He flicked it open, held it up in the air, and clicked it. The nearest street lamp went out with a little pop.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/kguimodtjw.mp3">He clicked it again -- the next lamp flickered into darkness.</dialogue>
+            <dialogue id="Narrator" character_image="clear_characters/D7yS8aFWtQ.png" character_voice="vits-eng-194" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/nqxafjbgns.mp3">Twelve times he clicked the Put-Outer, until the only lights left on the whole street were two tiny pinpricks in the distance, which were the eyes of the cat watching him.</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/hlwnnpvpav.mp3">Fancy seeing you here, Professor McGonagall.</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/gwmwrnlybp.mp3">How did you know it was me?</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/whfiywjikj.mp3">My dear Professor, I've never seen a cat sit so stiffly.</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/bxmtwqtiyg.mp3">You'd be stiff if you'd been sitting on a brick wall all day.</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/kvdwkmqskh.mp3">All day? When you could have been celebrating? I must have passed a dozen feasts and parties on my way here.</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/lbnvfrchlu.mp3">Oh yes, everyo...</dialogue>
         </dialogues>
     </scene><scene>
-        <background>The Dursleys' dark living room, with the window facing the street. The atmosphere is tense and celebratory at the same time.</background>
+        <background image="https://replicate.delivery/yhqm/nyqNUKS58y5rL5FiZJSs6MjuUfhCoDD2IwWM7TGu2n8deHhTA/out-0.webp">The Dursleys' dark living room, with the window facing the street. The atmosphere is tense and celebratory at the same time.</background>
         <dialogues>
-            <dialogue id="Professor McGonagall">"Ne's celebrating, all right," she said impatiently. "You'd think they'd be a bit more careful, but no -- even the Muggles have noticed something's going on. It was on their news."</dialogue>
-            <dialogue id="Professor McGonagall">"I heard it. Flocks of owls... shooting stars.... Well, they're not completely stupid. They were bound to notice something. Shooting stars down in Kent -- I'll bet that was Dedalus Diggle. He never had much sense."</dialogue>
-            <dialogue id="Albus Dumbledore">"You can't blame them," said Dumbledore gently. "We've had precious little to celebrate for eleven years."</dialogue>
-            <dialogue id="Professor McGonagall">"I know that," said Professor McGonagall irritably. "But that's no reason to lose our heads. People are being downright careless, out on the streets in broad daylight, not even dressed in Muggle clothes, swapping rumors."</dialogue>
-            <dialogue id="Professor McGonagall">"A fine thing it would be if, on the very day You-Know-Who seems to have disappeared at last, the Muggles found out about us all. I suppose he really has gone, Dumbledore?"</dialogue>
-            <dialogue id="Albus Dumbledore">"It certainly seems so," said Dumbledore. "We have much to be thankful for. Would you care for a lemon drop?"</dialogue>
-            <dialogue id="Professor McGonagall">"A what?"</dialogue>
-            <dialogue id="Albus Dumbledore">"A lemon drop. They're a kind of Muggle sweet I'm rather fond of."</dialogue>
-            <dialogue id="Professor McGonagall">"No, thank you," said Professor McGonagall coldly, as though she didn't think this was the moment for lemon drops.</dialogue>
-            <dialogue id="Professor McGonagall">"As I say, even if You-Know-Who has gone -"</dialogue>
-            <dialogue id="Albus Dumbledore">"My dear Professor, surely a sensible person like yourself can call him by his name? All this 'You-Know-Who' nonsense -- for eleven years I have been trying to persuade people to call him by his proper name: Voldemort."</dialogue>
-            <dialogue id="Professor McGonagall">"I know you haven't, said Professor McGonagall, sounding half exasperated, half admiring. "But you're different. Everyone knows you're the only one You-K</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/yakcpkivbg.mp3">"Ne's celebrating, all right," she said impatiently. "You'd think they'd be a bit more careful, but no -- even the Muggles have noticed something's going on. It was on their news."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/alrniwxrrn.mp3">"I heard it. Flocks of owls... shooting stars.... Well, they're not completely stupid. They were bound to notice something. Shooting stars down in Kent -- I'll bet that was Dedalus Diggle. He never had much sense."</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/mjcilbotkx.mp3">"You can't blame them," said Dumbledore gently. "We've had precious little to celebrate for eleven years."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/sploiaymmh.mp3">"I know that," said Professor McGonagall irritably. "But that's no reason to lose our heads. People are being downright careless, out on the streets in broad daylight, not even dressed in Muggle clothes, swapping rumors."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/rgrsdyufkb.mp3">"A fine thing it would be if, on the very day You-Know-Who seems to have disappeared at last, the Muggles found out about us all. I suppose he really has gone, Dumbledore?"</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/zcqeprpwyf.mp3">"It certainly seems so," said Dumbledore. "We have much to be thankful for. Would you care for a lemon drop?"</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/vuqtfcusto.mp3">"A what?"</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/acjhcisoev.mp3">"A lemon drop. They're a kind of Muggle sweet I'm rather fond of."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/bpdapdyjof.mp3">"No, thank you," said Professor McGonagall coldly, as though she didn't think this was the moment for lemon drops.</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/mshmygcdra.mp3">"As I say, even if You-Know-Who has gone -"</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/angsoabgdy.mp3">"My dear Professor, surely a sensible person like yourself can call him by his name? All this 'You-Know-Who' nonsense -- for eleven years I have been trying to persuade people to call him by his proper name: Voldemort."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/jcfqqqojmc.mp3">"I know you haven't, said Professor McGonagall, sounding half exasperated, half admiring. "But you're different. Everyone knows you're the only one You-K</dialogue>
         </dialogues>
     </scene><scene>
-        <background>A dark and cold night, with a dimly lit wall where Professor McGonagall is waiting. The atmosphere is tense and anxious.</background>
+        <background image="https://replicate.delivery/yhqm/TH3EoXcg8SogHNFSJBdQVwmjso476nqbjPk3OyiID6dSfjwJA/out-0.webp">A dark and cold night, with a dimly lit wall where Professor McGonagall is waiting. The atmosphere is tense and anxious.</background>
         <dialogues>
-            <dialogue id="Albus Dumbledore">"Now, oh, all right, Voldemort, was frightened of."</dialogue>
-            <dialogue id="Albus Dumbledore">"You flatter me,"</dialogue>
-            <dialogue id="Albus Dumbledore">"Voldemort had powers I will never have."</dialogue>
-            <dialogue id="Albus Dumbledore">"Only because you're too -- well -- noble to use them."</dialogue>
-            <dialogue id="Albus Dumbledore">"It's lucky it's dark. I haven't blushed so much since Madam Pomfrey told me she liked my new earmuffs."</dialogue>
-            <dialogue id="Professor McGonagall">"The owls are nothing next to the rumors that are flying around. You know what everyone's saying? About why he's disappeared? About what finally stopped him?"</dialogue>
-            <dialogue id="Professor McGonagall">"What they're saying,"</dialogue>
-            <dialogue id="Professor McGonagall">"is that last night Voldemort turned up in Godric's Hollow. He went to find the Potters. The rumor is that Lily and James Potter are -- are -- that they're -- dead."</dialogue>
-            <dialogue id="Albus Dumbledore">"I know... I know..."</dialogue>
-            <dialogue id="Professor McGonagall">"Lily and James... I can't believe it... I didn't want to believe it... Oh, Albus..."</dialogue>
-            <dialogue id="Professor McGonagall">"That's not all. They're saying he tried to kill the Potter's son, Harry. But -- he couldn't. He couldn't kill that little boy. No one knows why, or how, but they're saying that when he couldn't kill Harry Potter, Voldemort's power somehow broke -- and that's why he's gone."</dialogue>
-            <dialogue id="Albus Dumbledore">"It's -- it's true?"</dialogue>
-            <dialogue id="Professor McGonagall">"After all he's done... all the people he's killed... he couldn't kill a little boy? It's just astounding... of all the things to stop him... but how in the name of heaven did Harry survive?"</dialogue>
-            <dialogue id="Albus Dumbledore">"We can only guess."</dialogue>
-        </dialogues>
-    </scene><scene>
-    <background>A quiet, suburban street with a row of ordinary houses, each with a neat garden and tidy curtains. The atmosphere is peaceful and uneventful.</background>
-    <dialogues>
-      <dialogue id="Albus Dumbledore">"Hagrid's late. I suppose it was he who told you I'd be here, by the way?"</dialogue>
-      <dialogue id="Professor McGonagall">"Yes,"</dialogue>
-      <dialogue id="Professor McGonagall">"And I don't suppose you're going to tell me why you're here, of all places?"</dialogue>
-      <dialogue id="Albus Dumbledore">"I've come to bring Harry to his aunt and uncle. They're the only family he has left now."</dialogue>
-      <dialogue id="Professor McGonagall">"You don't mean -- you can't mean the people who live here?"</dialogue>
-      <dialogue id="Professor McGonagall">"Dumbledore -- you can't. I've been watching them all day. You couldn't find two people who are less like us. And they've got this son -- I saw him kicking his mother all the way up the street, screaming for sweets. Harry Potter come and live here!"</dialogue>
-    </dialogues>
-  </scene><scene>
-        <background>A quiet suburban street in the Muggle world, with ordinary houses and neat gardens. The atmosphere is calm and peaceful.</background>
-        <dialogues>
-            <dialogue id="Professor McGonagall">"Of course. But how is the boy getting here, Dumbledore?"</dialogue>
-            <dialogue id="Albus Dumbledore">"Hagrid's bringing him."</dialogue>
-            <dialogue id="Professor McGonagall">"You think it -- wise -- to trust Hagrid with something as important as this?"</dialogue>
-            <dialogue id="Albus Dumbledore">"I would trust Hagrid with my life."</dialogue>
-            <dialogue id="Professor McGonagall">"I'm not saying his heart isn't in the right place,"</dialogue>
-            <dialogue id="Professor McGonagall">"but you can't pretend he's not careless. He does tend to -- what was that?"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The same suburban street, but now with a huge motorcycle fallen from the sky and landed on the road. The motorcycle is enormous, and the man sitting astride it is even more massive.</background>
-        <dialogues>
-            <dialogue id="Narrator">"A low rumbling sound had broken the silence around them."</dialogue>
-            <dialogue id="Narrator">"It grew steadily louder as they looked up and down the street for some sign of a headlight; it swelled to a roar as they both looked up at the sky -- and a huge motorcycle fell out of the air and landed on the road in front of them."</dialogue>
-            <dialogue id="Albus Dumbledore">"Hagrid,"</dialogue>
-            <dialogue id="Albus Dumbledore">"At last. And where did you get that motorcycle?"</dialogue>
-            <dialogue id="Hagrid">"Borrowed it, Professor Dumbledore, sir,"</dialogue>
-            <dialogue id="Hagrid">"Young Sirius Black lent it to me. I've got him, sir."</dialogue>
-            <dialogue id="Albus Dumbledore">"No problems, were there?"</dialogue>
-            <dialogue id="Hagrid">"No, sir -- house was almost destroyed, but I got him out all right before the Muggles started swarmin' around. He fell asleep as we was flyin' over Bristol."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The same suburban street, with Dumbledore and Professor McGonagall bending forward over the bundle of blankets held by Hagrid.</background>
-        <dialogues>
-            <dialogue id="Albus Dumbledore">"He'll have that scar forever."</dialogue>
-            <dialogue id="Professor McGonagall">"Couldn't you do something about it, Dumbledore?"</dialogue>
-            <dialogue id="Albus Dumbledore">"Even if I could..."</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>A quiet suburban street in the Muggle world, with old-fashioned street lamps casting a warm glow. The houses are small and ordinary, with neat gardens and tidy curtains. The atmosphere is quiet and suburban.</background>
-        <dialogues>
-            <dialogue id="Albus Dumbledore">"I wouldn't. Scars can come in handy. I have one myself above my left knee that is a perfect map of the London Underground. Well-- give him here, Hagrid -- we'd better get this over with."</dialogue>
-            <dialogue id="Hagrid">"Could I -- could I say good-bye to him, sir?"</dialogue>
-            <dialogue id="Hagrid">"Shhh!"</dialogue>
-            <dialogue id="Professor McGonagall">"You'll wake the Muggles!"</dialogue>
-            <dialogue id="Hagrid">"S-s-sorry,"</dialogue>
-            <dialogue id="Hagrid">"But I c-c-can't stand it -- Lily an' James dead-- an' poor little Harry off ter live with Muggles -"</dialogue>
-            <dialogue id="Professor McGonagall">"Yes, yes, it's all very sad, but get a grip on yourself, Hagrid, or we'll be found,"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The Dursleys' house, a small and ordinary suburban home with a neat garden and tidy curtains. The atmosphere is quiet and suburban.</background>
-        <dialogues>
-            <dialogue id="Albus Dumbledore">"Well,"</dialogue>
-            <dialogue id="Albus Dumbledore">"that's that. We've no business staying here. We may as well go and join the celebrations."</dialogue>
-            <dialogue id="Hagrid">"Yeah,"</dialogue>
-            <dialogue id="Hagrid">"I'll be takin' Sirius his bike back. G'night, Professor McGonagall -- Professor Dumbledore, sir."</dialogue>
-            <dialogue id="Albus Dumbledore">"I shall see you soon, I expect, Professor McGonagall,"</dialogue>
-            <dialogue id="Professor McGonagall">"(Blowing her nose in reply)"</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>Privet Drive, a suburban street with neat houses and tidy gardens, lit by street lamps that cast a warm orange glow.</background>
-        <dialogues>
-            <dialogue id="Narrator">"Clicked it once, and twelve balls of light sped back to their street lamps so that Privet Drive glowed suddenly orange and he could make out a tabby cat slinking around the corner at the other end of the street."</dialogue>
-            <dialogue id="Albus Dumbledore">"Good luck, Harry."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The interior of number four, Privet Drive, a tidy and ordinary living room with a mantelpiece and photographs.</background>
-        <dialogues>
-            <dialogue id="Narrator">"Nearly ten years had passed since the Dursleys had woken up to find their nephew on the front step, but Privet Drive had hardly changed at all."</dialogue>
-            <dialogue id="Narrator">"The sun rose on the same tidy front gardens and lit up the brass number four on the Dursleys' front door; it crept into their living room, which was almost exactly the same as it had been on the night when Mr. Dursley had seen that fateful news report about the owls."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The same living room, but with a focus on the photographs on the mantelpiece, showing Dudley Dursley at different ages.</background>
-        <dialogues>
-            <dialogue id="Narrator">"Only the photographs on the mantelpiece really showed how much time had passed."</dialogue>
-            <dialogue id="Narrator">"Ten years ago, there had been lots of pictures of what looked like a large pink beach ball wearing different-colored bonnets -- but Dudley Dursley was no longer a baby, and now the photographs showed a large blond boy riding his first bicycle, on a carousel at the fair, playing a computer game with his father, being hugged and kissed by his mother."</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>The interior of the Dursleys' home, specifically Harry's small cupboard under the stairs. The room is cluttered and dimly lit, with cobwebs hanging from the ceiling.</background>
-        <dialogues>
-            <dialogue id="Aunt Petunia">"Up! Get up! Now!"</dialogue>
-            <dialogue id="Harry Potter">"(mumbling)..."</dialogue>
-            <dialogue id="Aunt Petunia">"Up!"</dialogue>
-            <dialogue id="Harry Potter">"Nearly..."</dialogue>
-            <dialogue id="Aunt Petunia">"Well, get a move on, I want you to look after the bacon. And don't you dare let it burn, I want everything perfect on Duddy's birthday."</dialogue>
-            <dialogue id="Harry Potter">"(sighs)..."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The kitchen of the Dursleys' home, cluttered with Dudley's birthday presents. The table is almost hidden beneath the gifts, and the air is thick with the smell of cooking bacon.</background>
-        <dialogues>
-            <dialogue id="Aunt Petunia">"Are you up yet?"</dialogue>
-            <dialogue id="Harry Potter">"Nearly..."</dialogue>
-            <dialogue id="Aunt Petunia">"What did you say?"</dialogue>
-            <dialogue id="Harry Potter">"Nothing, nothing..."</dialogue>
-            <dialogue id="Aunt Petunia">"(muttering to herself)..."</dialogue>
-        </dialogues>
-    </scene><scene>
-    <background>The Dursleys' kitchen, a small, cramped room with a worn-out table and chairs. The walls are a dull yellow, and the air is thick with the smell of cooking bacon and eggs.</background>
-    <dialogues>
-      <dialogue id="Narrator">Harry had a very thin scar on his forehead that was shaped like a bolt of lightning.</dialogue>
-      <dialogue id="Uncle Vernon">Comb your hair!</dialogue>
-      <dialogue id="Dudley">Thirty-six. That's two less than last year.</dialogue>
-      <dialogue id="Aunt Petunia">Darling, you haven't counted Auntie Marge's present, see, it's here under this big one from Mommy and Daddy.</dialogue>
-      <dialogue id="Dudley">All right, thirty-seven then.</dialogue>
-      <dialogue id="Aunt Petunia">And we'll buy you another two presents.</dialogue>
-    </dialogues>
-  </scene><scene>
-        <background>The interior of the Dursleys' home, a cozy and cluttered living room with presents scattered around. The atmosphere is festive, with balloons and streamers hanging from the ceiling.</background>
-        <dialogues>
-            <dialogue id="Harry Potter">While we're out today. How's that, popkin? Two more presents. Is that all right?</dialogue>
-            <dialogue id="Dudley">Thirty ... thirty...</dialogue>
-            <dialogue id="Aunt Petunia">Thirty-nine, sweetums.</dialogue>
-            <dialogue id="Dudley">Oh.</dialogue>
-            <dialogue id="Uncle Vernon">Little tyke wants his money's worth, just like his father. 'Atta boy, Dudley!</dialogue>
-            <dialogue id="Aunt Petunia">Bad news, Vernon. Mrs. Figg's broken her leg. She can't take him.</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The same living room, but with a more tense atmosphere. Aunt Petunia looks worried and angry, while Uncle Vernon tries to come up with a solution.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">We could phone Marge.</dialogue>
-            <dialogue id="Aunt Petunia">Don't be silly, Vernon, she hates the boy.</dialogue>
-            <dialogue id="Uncle Vernon">What about what's-her-name, your friend -- Yvonne?</dialogue>
-            <dialogue id="Aunt Petunia">On vacation in Majorca.</dialogue>
-            <dialogue id="Harry Potter">You could just leave me here.</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>The interior of the Dursleys' home, a small and tidy suburban house with a living room that is decorated with a mix of old and new furniture.</background>
-        <dialogues>
-            <dialogue id="Aunt Petunia">"And come back and find the house in ruins?"</dialogue>
-            <dialogue id="Harry Potter">"I won't blow up the house,"</dialogue>
-            <dialogue id="Aunt Petunia">"I suppose we could take him to the zoo,"</dialogue>
-            <dialogue id="Uncle Vernon">"That car's new, he's not sitting in it alone...."</dialogue>
-            <dialogue id="Dudley">"(Wailing loudly)"</dialogue>
-            <dialogue id="Aunt Petunia">"Dinky Duddydums, don't cry, Mummy won't let him spoil your special day!"</dialogue>
-            <dialogue id="Dudley">"I... don't... want... him... t-t-to come!"</dialogue>
-            <dialogue id="Dudley">"He always sp- spoils everything!"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The Dursleys' living room, with the doorbell ringing and Piers Polkiss and his mother entering the room.</background>
-        <dialogues>
-            <dialogue id="Aunt Petunia">"Oh, good Lord, they're here!"</dialogue>
-            <dialogue id="Dudley">"(Stopping his fake crying)"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The interior of the Dursleys' car, a somewhat battered family saloon. The windows are steamed up from the summer heat and the air is thick with the smell of cheap petrol and stale cigarettes.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"I'm warning you,"</dialogue>
-            <dialogue id="Uncle Vernon">"I'm warning you now, boy -- any funny business, anything at all -- and you'll be in that cupboard from now until Christmas."</dialogue>
-            <dialogue id="Harry Potter">"I'm not going to do anything,"</dialogue>
-            <dialogue id="Harry Potter">"honestly.."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The zoo, with the sounds of animals and chatter of people in the background. Harry, Dudley, and Piers are walking through the zoo, surrounded by cages and exhibits.</background>
-        <dialogues>
-            <dialogue id="Narrator">"Half an hour later, Harry, who couldn't believe his luck, was sitting in the back of the Dursleys' car with Piers and Dudley, on the way to the zoo for the first time in his life."</dialogue>
-        </dialogues>
-    </scene><scene>
-    <background>The Dursleys' home, a small, ordinary house on a suburban street. The interior is tidy but lacks any sense of warmth or comfort.</background>
-    <dialogues>
-      <dialogue id="Narrator">Once, Aunt Petunia, tired of Harry coming back from the barbers looking as though he hadn't been at all, had taken a pair of kitchen scissors and cut his hair so short he was almost bald except for his bangs, which she left "to hide that horrible scar."</dialogue>
-      <dialogue id="Harry Potter">I spent a sleepless night imagining school the next day, where I was already laughed at for my baggy clothes and taped glasses.</dialogue>
-      <dialogue id="Narrator">Next morning, however, he had gotten up to find his hair exactly as it had been before Aunt Petunia had sheared it off.</dialogue>
-      <dialogue id="Harry Potter">I was given a week in my cupboard for this, even though I had tried to explain that I couldn't explain how it had grown back so quickly.</dialogue>
-    </dialogues>
-  </scene> <scene>
-    <background>The Dursleys' home, a small, ordinary house on a suburban street. The interior is tidy but lacks any sense of warmth or comfort.</background>
-    <dialogues>
-      <dialogue id="Narrator">Another time, Aunt Petunia had been trying to force him into a revolting old sweater of Dudley's (brown with orange puff balls) --</dialogue>
-      <dialogue id="Aunt Petunia">The harder I tried to pull it over his head, the smaller it seemed to become, until finally it might have fitted a hand puppet, but certainly wouldn't fit Harry.</dialogue>
-      <dialogue id="Narrator">Aunt Petunia had decided it must have shrunk in the wash and, to his great relief, Harry wasn't punished.</dialogue>
-    </dialogues>
-  </scene> <scene>
-    <background>The school kitchens, with large pots and pans hanging from the ceiling and a long counter in the center of the room.</background>
-    <dialogues>
-      <dialogue id="Narrator">On the other hand, he'd gotten into terrible trouble for being found on the roof of the school kitchens.</dialogue>
-      <dialogue id="Harry Potter">Dudley's gang had been chasing me as usual when, as much to my surprise as anyone else's, there I was sitting on the chimney.</dialogue>
-      <dialogue id="Narrator">The Dursleys had received a very angry letter from Harry's headmistress telling them Harry had been climbing school buildings.</dialogue>
-      <dialogue id="Harry Potter">But all I'd tried to do (as I shouted at Uncle Vernon through the locked door of my cupboard) was jump behind the big trash cans outside the kitchen doors.</dialogue>
-    </dialogues>
-  </scene> <scene>
-    <background>The interior of the Dursleys' car, a somewhat battered family saloon. The windows are steamed up from the summer heat and the air is thick with the smell of cheap petrol and stale cigarettes.</background>
-    <dialogues>
-      <dialogue id="Uncle Vernon">People at work, Harry, the c--</dialogue>
-      <dialogue id="Harry Potter">But today, nothing was going to go wrong.</dialogue>
-      <dialogue id="Narrator">It was even worth being with Dudley and Piers to be spending the day somewhere that wasn't school, his cupboard, or Mrs. Figg's cabbage-smelling living room.</dialogue>
-    </dialogues>
-  </scene><scene>
-        <background>The interior of the Dursleys' car, a somewhat battered family saloon. The windows are steamed up from the summer heat and the air is thick with the smell of cheap petrol and stale cigarettes.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"... roaring along like maniacs, the young hoodlums,"</dialogue>
-            <dialogue id="Harry Potter">"I had a dream about a motorcycle. It was flying. "</dialogue>
-            <dialogue id="Uncle Vernon">"MOTORCYCLES DON'T FLY!"</dialogue>
-            <dialogue id="Dudley">"(Sniggering)"</dialogue>
-            <dialogue id="Piers">"(Sniggering)"</dialogue>
-            <dialogue id="Harry Potter">"I know they don't. It was only a dream."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The entrance of the zoo, a bustling area with families and children excitedly walking towards the gates. The sun is shining brightly overhead.</background>
-        <dialogues>
-            <dialogue id="Narrator">"The Dursleys bought Dudley and Piers large chocolate ice creams at the entrance and then, because the smiling lady in the van had asked Harry what he wanted before they could hurry him away, they bought him a cheap lemon ice pop."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The zoo restaurant, a crowded and noisy area with families eating and chatting. The atmosphere is lively and cheerful.</background>
-        <dialogues>
-            <dialogue id="Dudley">"(Throwing a tantrum)"</dialogue>
-            <dialogue id="Uncle Vernon">"(Trying to calm Dudley down)"</dialogue>
-            <dialogue id="Harry Potter">"(Thinking to himself) I was allowed to finish the first."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The reptile house, a cool and dark area with lit windows all along the walls. Behind the glass, all sorts of lizards and snakes are crawling and slithering over bits of wood and stone.</background>
-        <dialogues>
-            <dialogue id="Narrator">"It was cool and dark in there, with lit windows all along the walls."</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>A dimly lit reptile house with rows of glass tanks containing various species of snakes. The air is thick with the smell of damp earth and reptile food. The atmosphere is quiet and humid.</background>
-        <dialogues>
-            <dialogue id="Dudley">"Make it move."</dialogue>
-            <dialogue id="Uncle Vernon">"(tapping on the glass)"</dialogue>
-            <dialogue id="Dudley">"Do it again."</dialogue>
-            <dialogue id="Uncle Vernon">"(rapping on the glass)"</dialogue>
-            <dialogue id="Dudley">"This is boring."</dialogue>
-            <dialogue id="Harry Potter">"(whispering to the snake) I know, it must be really annoying."</dialogue>
-            <dialogue id="Harry Potter">"(to the snake) Where do you come from, anyway?"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>A close-up of the sign next to the glass tank, reading "Boa Constrictor, Brazil".</background>
-        <dialogues>
-            <dialogue id="Harry Potter">"(reading) Boa Constrictor, Brazil."</dialogue>
-            <dialogue id="Harry Potter">"(to the snake) Was it nice there?"</dialogue>
-            <dialogue id="Harry Potter">"(reading) This specimen was bred in the zoo."</dialogue>
-            <dialogue id="Harry Potter">"(to the snake) Oh, I see -- so you've never been to Brazil?"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The interior of the reptile house, with Harry standing in front of the glass tank, staring at the snake.</background>
-        <dialogues>
-            <dialogue id="Harry Potter">"(whispering to the snake) I wouldn't have been surprised if it had died of boredom itself -- no company except stupid people drumming their fingers on the glass trying to disturb it all day long."</dialogue>
-        </dialogues>
-    </scene><scene>
-    <background>The reptile house at the zoo, with a large glass tank containing a boa constrictor in the center of the room. The atmosphere is hot and humid, with the sounds of snakes hissing and people murmuring in the background.</background>
-    <dialogues>
-      <dialogue id="Piers">DUDLEY! MR. DURSLEY! COME AND LOOK AT THIS SNAKE! YOU WON'T BELIEVE WHAT IT'S DOING!</dialogue>
-      <dialogue id="Dudley">Out of the way, you.</dialogue>
-      <dialogue id="Harry Potter">(groaning in pain)</dialogue>
-      <dialogue id="Piers">(screaming in horror)</dialogue>
-      <dialogue id="Dudley">(screaming in horror)</dialogue>
-      <dialogue id="Unknown">(hissing voice) Brazil, here I come.... Thanksss, amigo.</dialogue>
-    </dialogues>
-  </scene> <scene>
-    <background>The zoo director's office, with a warm and cozy atmosphere. There is a large wooden desk in the center of the room, with the zoo director sitting behind it, looking apologetic.</background>
-    <dialogues>
-      <dialogue id="Zoo Director">I'm so sorry, Mrs. Dursley. Please, do accept my apologies.</dialogue>
-      <dialogue id="Aunt Petunia">(soothingly) It's all right, dear. These things happen.</dialogue>
-      <dialogue id="Piers">(excitedly) Harry was talking to it, weren't you, Harry?</dialogue>
-      <dialogue id="Uncle Vernon">(angrily) Go -- cupboard -- stay -- no meals.</dialogue>
-      <dialogue id="Aunt Petunia">(calmly) Vernon, dear, perhaps you should have a brandy.</dialogue>
-    </dialogues>
-  </scene> <scene>
-    <background>Harry's dark cupboard under the stairs, with a small, cramped space and the sound of the Dursleys' muffled voices in the background.</background>
-    <dialogues>
-      <dialogue id="Harry Potter">(to himself) I wish I had a watch. I don't know what time it is...</dialogue>
-    </dialogues>
-  </scene><scene>
-    <background>A small, dingy cupboard under the stairs in the Dursleys' home. The cupboard is cluttered with old shoes, broken toys, and dusty boxes.</background>
-    <dialogues>
-        <dialogue id="Narrator">"n years, ten miserable years, as long as he could remember, ever since he'd been a baby and his parents had died in that car crash."</dialogue>
-        <dialogue id="Narrator">"He couldn't remember being in the car when his parents had died."</dialogue>
-        <dialogue id="Narrator">"Sometimes, when he strained his memory during long hours in his cupboard, he came up with a strange vision: a blinding flash of green light and a burning pain on his forehead."</dialogue>
-        <dialogue id="Narrator">"This, he supposed, was the crash, though he couldn't imagine where all the green light came from."</dialogue>
-        <dialogue id="Narrator">"He couldn't remember his parents at all."</dialogue>
-    </dialogues>
-</scene> <scene>
-    <background>A shopping street in the Muggle world, with ordinary people walking by. The atmosphere is busy and ordinary.</background>
-    <dialogues>
-        <dialogue id="Narrator">"A tiny man in a violet top hat had bowed to him once while out shopping with Aunt Petunia and Dudley."</dialogue>
-        <dialogue id="Aunt Petunia">"(furiously) Do you know that man?"</dialogue>
-        <dialogue id="Harry Potter">"(confused) No, Aunt Petunia."</dialogue>
-        <dialogue id="Narrator">"After asking Harry furiously if he knew the man, Aunt Petunia had rushed them out of the shop without buying anything."</dialogue>
-    </dialogues>
-</scene> <scene>
-    <background>A bus in the Muggle world, with ordinary people sitting and standing. The atmosphere is busy and ordinary.</background>
-    <dialogues>
-        <dialogue id="Narrator">"A wild-looking old woman dressed all in green had waved merrily at him once on a bus."</dialogue>
-        <dialogue id="Harry Potter">"(surprised) Who are you?"</dialogue>
-        <dialogue id="Unknown">"(smiling) Just a friend, dear."</dialogue>
-    </dialogues>
-</scene> <scene>
-    <background>A street in the Muggle world, with ordinary people walking by. The atmosphere is busy and ordinary.</background>
-    <dialogues>
-        <dialogue id="Narrator">"A bald man in a very long purple coat had actually shaken his hand in the street the other day and then walked away without a word."</dialogue>
-        <dialogue id="Harry Potter">"(confused) Who are you?"</dialogue>
-        <dialogue id="Unknown">"(smiling) Just a friend, dear."</dialogue>
-    </dialogues>
-</scene> <scene>
-    <background>A school in the Muggle world, with students sitting at their desks. The atmosphere is ordinary and dull.</background>
-    <dialogues>
-        <dialogue id="Narrator">"At school, Harry had no one."</dialogue>
-        <dialogue id="Narrator">"Everybody knew that Dudley's gang hated that odd Harry Potter in his baggy old clothes and broken glasses, and nobody liked to disagree with Dudley's gang."</dialogue>
-    </dialogues>
-</scene> <scene>
-    <background>The interior of the Dursleys' home, with the Dursleys sitting in the living room. The atmosphere is ordinary and dull.</background>
-    <dialogues>
-        <dialogue id="Narrator">"The escape of the Brazilian boa constrictor earned Harry his longest-ever punishment."</dialogue>
-        <dialogue id="Uncle Vernon">"(angrily) You're going to be punished, Harry!"</dialogue>
-        <dialogue id="Harry Potter">"(scared) Yes, Uncle Vernon."</dialogue>
-    </dialogues>
-</scene><scene>
-        <background>The Dursleys' home, Privet Drive, with a suburban atmosphere and a sense of unease.</background>
-        <dialogues>
-            <dialogue id="Narrator">Harry was glad school was over, but there was no escaping Dudley's gang, who visited the house every single day.</dialogue>
-            <dialogue id="Narrator">Piers, Dennis, Malcolm, and Gordon were all big and stupid, but as Dudley was the biggest and stupidest of the lot, he was the leader.</dialogue>
-            <dialogue id="Narrator">The rest of them were all quite happy to join in Dudley's favorite sport: Harry Hunting.</dialogue>
-            <dialogue id="Dudley">"They stuff people's heads down the toilet the first day at Stonewall,"</dialogue>
-            <dialogue id="Harry Potter">"Want to come upstairs and practice?"</dialogue>
-            <dialogue id="Harry Potter">"No, thanks,"</dialogue>
-            <dialogue id="Harry Potter">"The poor toilet's never had anything as horrible as your head down it -- it might be sick."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>Mrs. Figg's home, with a cozy atmosphere and a hint of cat smell.</background>
-        <dialogues>
-            <dialogue id="Narrator">One day in July, Aunt Petunia took Dudley to London to buy his Smeltings uniform, leaving Harry at Mrs. Figg's.</dialogue>
-            <dialogue id="Narrator">Mrs. Figg wasn't as bad as usual.</dialogue>
-            <dialogue id="Narrator">It turned out she'd broken her leg tripping over one of her cats, and she didn't seem quite as fond of them as before.</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The Dursleys' living room, with a sense of pride and excitement.</background>
-        <dialogues>
-            <dialogue id="Narrator">That evening, Dudley paraded around the living room for the family in his brand-new uniform.</dialogue>
-            <dialogue id="Uncle Vernon">"It's the proudest moment of my life."</dialogue>
-            <dialogue id="Dudley">(parading around in his new uniform)</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>The interior of the Dursleys' home, specifically the kitchen, with a large metal tub in the sink and a horrible smell filling the air.</background>
-        <dialogues>
-            <dialogue id="Aunt Petunia">"Your new school uniform,"</dialogue>
-            <dialogue id="Harry Potter">"Oh,"</dialogue>
-            <dialogue id="Harry Potter">"I didn't realize it had to be so wet."</dialogue>
-            <dialogue id="Aunt Petunia">"Don't be stupid."</dialogue>
-            <dialogue id="Uncle Vernon">"Get the mail, Dudley."</dialogue>
-            <dialogue id="Dudley">"(no dialogue, just banging his Smelting stick)"</dialogue>
-            <dialogue id="Uncle Vernon">"Make Harry get it."</dialogue>
-            <dialogue id="Harry Potter">"(no dialogue, just dodging the Smelting stick)"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The same kitchen, with the mail scattered on the doormat and Harry staring at a letter addressed to him.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"Get the mail, Harry."</dialogue>
-            <dialogue id="Dudley">"(no dialogue, just poking Harry with his Smelting stick)"</dialogue>
-            <dialogue id="Harry Potter">"(no dialogue, just staring at the letter)"</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>The Dursleys' kitchen, a small, cluttered room with a worn-out table and chairs. The walls are a dull yellow, and the air is thick with the smell of cooking and stale air.</background>
-        <dialogues>
-            <dialogue id="Narrator">he'd never even got rude notes asking for books back. Yethere it was, a letter, addressed so plainly there could be no mistake:</dialogue>
-            <dialogue id="Narrator">Mr. H. Potter The Cupboard under the Stairs 4 Privet Drive Little Whinging Surrey</dialogue>
-            <dialogue id="Uncle Vernon">"Hurry up, boy!"</dialogue>
-            <dialogue id="Uncle Vernon">"What are you doing, checking for letter bombs?"</dialogue>
-            <dialogue id="Uncle Vernon">"Marge's ill,"</dialogue>
-            <dialogue id="Uncle Vernon">"Ate a funny whelk. --."</dialogue>
-            <dialogue id="Dudley">"Dad!"</dialogue>
-            <dialogue id="Dudley">"Dad, Harry's got something!"</dialogue>
-            <dialogue id="Harry Potter">"That's mine!"</dialogue>
-            <dialogue id="Uncle Vernon">"Who'd be writing to you?"</dialogue>
-            <dialogue id="Uncle Vernon">"P-P-Petunia!"</dialogue>
-            <dialogue id="Aunt Petunia">"Vernon! Oh my goodness -- Vernon!"</dialogue>
-            <dialogue id="Dudley">"I want to read that letter,"</dialogue>
-        </dialogues>
-    </scene><scene>
-    <background>The Dursleys' kitchen, a small and cluttered room with a worn-out table and chairs. The walls are a dull yellow, and the air is thick with the smell of cooking and stale air.</background>
-    <dialogues>
-      <dialogue id="Harry Potter">"I want to read it," said Harry furiously, "as it's mine."</dialogue>
-      <dialogue id="Uncle Vernon">"Get out, both of you," croaked Uncle Vernon, stuffing the letter back inside its envelope.</dialogue>
-      <dialogue id="Harry Potter">"I WANT MY LETTER!" he shouted.</dialogue>
-      <dialogue id="Dudley">"Let me see it!" demanded Dudley.</dialogue>
-      <dialogue id="Uncle Vernon">"OUT!" roared Uncle Vernon, and he took both Harry and Dudley by the scruffs of their necks and threw them into the hall, slamming the kitchen door behind them.</dialogue>
-    </dialogues>
-  </scene> <scene>
-    <background>The hallway outside the kitchen, a narrow and dimly lit space with a worn-out carpet and a few old family portraits on the walls.</background>
-    <dialogues>
-      <dialogue id="Aunt Petunia">"Vernon," Aunt Petunia was saying in a quivering voice, "look at the address -- how could they possibly know where he sleeps? You don't think they're watching the house?"</dialogue>
-      <dialogue id="Uncle Vernon">"Watching -- spying -- might be following us," muttered Uncle Vernon wildly.</dialogue>
-      <dialogue id="Aunt Petunia">"But what should we do, Vernon? Should we write back? Tell them we don't want --"</dialogue>
-      <dialogue id="Uncle Vernon">"No," he said finally. "No, we'll ignore it. If they don't get an answer... Yes, that's best... we won't do anything...."</dialogue>
-    </dialogues>
-  </scene> <scene>
-    <background>Harry's cupboard under the stairs, a small and cramped space with old trunks and boxes stacked up to the ceiling. The air is musty and stale.</background>
-    <dialogues>
-      <dialogue id="Harry Potter">"Where's my letter?" said Harry, the moment Uncle Vernon had squeezed through the door. "Who's writing to me?"</dialogue>
-      <dialogue id="Uncle Vernon">"No one. it was addressed to you by mistake," said Uncle Vernon shortly. "I have burned it."</dialogue>
-      <dialogue id="Harry Potter">"It was not a mistake," said Harry angrily, "it had my cupboard on it."</dialogue>
-      <dialogue id="Uncle Vernon">"SILENCE!" yelled Uncle Vernon, and a couple of spiders fell from the ceiling.</dialogue>
-      <dialogue id="Uncle Vernon">"Er -- yes, Harry -- about this cupboard. Your aunt and I have been thinking... you're really getting a bit big for it... we think it might be nice if you moved into Dudley's second bedroom."</dialogue>
-    </dialogues>
-  </scene><scene>
-        <background>The Dursleys' house, a small and ordinary suburban home with a tidy garden and a narrow hallway leading to the bedrooms.</background>
-        <dialogues>
-            <dialogue id="Harry Potter">Why?</dialogue>
-            <dialogue id="Uncle Vernon">Don't ask questions! Take this stuff upstairs, now.</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>Harry's new bedroom, a small room filled with broken toys and old belongings of Dudley's. The room is cluttered and messy, with a small bed in the corner.</background>
-        <dialogues>
-            <dialogue id="Narrator">The Dursleys' house had four bedrooms: one for Uncle Vernon and Aunt Petunia, one for visitors, one where Dudley slept, and one where Dudley kept all the toys and things that wouldn't fit into his first bedroom.</dialogue>
-            <dialogue id="Narrator">It only took Harry one trip upstairs to move everything he owned from the cupboard to this room.</dialogue>
-            <dialogue id="Dudley">(from downstairs) I don't want him in there... I need that room... make him get out....</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The Dursleys' kitchen, a small and ordinary room with a table and chairs in the center. The atmosphere is tense and quiet.</background>
-        <dialogues>
-            <dialogue id="Narrator">Next morning at breakfast, everyone was rather quiet.</dialogue>
-            <dialogue id="Dudley">(whimpering)</dialogue>
-            <dialogue id="Uncle Vernon">Dudley, go and get the mail.</dialogue>
-            <dialogue id="Dudley">(banging things with his Smelting stick) There's a...!</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>The interior of the Dursleys' home, 4 Privet Drive, with a small living room and a hall leading to the front door.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"Go to your cupboard -- I mean, your bedroom."</dialogue>
-            <dialogue id="Uncle Vernon">"Dudley -- go -- just go."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>Harry's new bedroom, a small room with a single bed and a cupboard.</background>
-        <dialogues>
-            <dialogue id="Narrator">"Harry walked round and round his new room."</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The dark hall of the Dursleys' home, with the front door at the end.</background>
-        <dialogues>
-            <dialogue id="Harry Potter">"(gasps)"</dialogue>
-            <dialogue id="Uncle Vernon">"(shouting for about half an hour)"</dialogue>
-            <dialogue id="Uncle Vernon">"Go and make a cup of tea."</dialogue>
-            <dialogue id="Harry Potter">"I want --"</dialogue>
-            <dialogue id="Uncle Vernon">"(tearing the letters into pieces)"</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>The interior of the Dursleys' home, a small and cluttered living room with a mail slot on the front door.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"See,"</dialogue>
-            <dialogue id="Uncle Vernon">"if they can't deliver them they'll just give up."</dialogue>
-            <dialogue id="Aunt Petunia">"I'm not sure that'll work, Vernon."</dialogue>
-            <dialogue id="Uncle Vernon">"Oh, these people's minds work in strange ways, Petunia, they're not like you and me,"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The interior of the Dursleys' home, with letters scattered all over the floor and Uncle Vernon trying to board up the doors.</background>
-        <dialogues>
-            <dialogue id="Narrator">"On Friday, no less than twelve letters arrived for Harry."</dialogue>
-            <dialogue id="Uncle Vernon">"(humming) Tiptoe Through the Tulips"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The interior of the Dursleys' home, with the milkman handing Aunt Petunia eggs through the living room window.</background>
-        <dialogues>
-            <dialogue id="Dudley">"Who on earth wants to talk to you this badly?"</dialogue>
-            <dialogue id="Aunt Petunia">"(shredding letters in the food processor)"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The interior of the Dursleys' home, with the kitchen in disarray and letters pouring out of the fireplace.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"No post on Sundays,"</dialogue>
-            <dialogue id="Uncle Vernon">"no damn letters today --"</dialogue>
-            <dialogue id="Harry Potter">"(leaping into the air trying to catch a letter)"</dialogue>
-            <dialogue id="Uncle Vernon">"Out! OUT!"</dialogue>
-        </dialogues>
-    </scene><scene>
-        <background>The interior of the Dursleys' living room, with letters streaming in through the door and bouncing off the walls and floor.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"That does it,"</dialogue>
-            <dialogue id="Uncle Vernon">"I want you all back here in five minutes ready to leave. We're going away. Just pack some clothes. No arguments!"</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The interior of the Dursleys' car, speeding down the highway with boarded-up doors and windows steamed up from the summer heat.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">"Shake 'em off... shake 'em off,"</dialogue>
-            <dialogue id="Dudley">(Sniffling)</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>A gloomy-looking hotel on the outskirts of a big city, with dim lighting and musty atmosphere.</background>
-        <dialogues>
-            <dialogue id="Uncle Vernon">(To the hotel owner)</dialogue>
-            <dialogue id="Hotel Owner">'Scuse me, but is one of you Mr. H. Potter?</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The hotel room with twin beds and damp, musty sheets, with Harry sitting on the windowsill staring down at the lights of passing cars.</background>
-        <dialogues>
-            <dialogue id="Harry Potter">(Thinking to himself)</dialogue>
-        </dialogues>
-    </scene> <scene>
-        <background>The hotel dining area, with the Dursleys eating stale cornflakes and cold tinned tomatoes on toast for breakfast.</background>
-        <dialogues>
-            <dialogue id="Hotel Owner">(To the Dursleys)</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/xllhwkslcz.mp3">"Now, oh, all right, Voldemort, was frightened of."</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ipdkfgoflk.mp3">"You flatter me,"</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/egkkvarnrh.mp3">"Voldemort had powers I will never have."</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/zuuifnlwwo.mp3">"Only because you're too -- well -- noble to use them."</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/thptopiayp.mp3">"It's lucky it's dark. I haven't blushed so much since Madam Pomfrey told me she liked my new earmuffs."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/zsayaslxly.mp3">"The owls are nothing next to the rumors that are flying around. You know what everyone's saying? About why he's disappeared? About what finally stopped him?"</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/qutuspyhrk.mp3">"What they're saying,"</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/bmxaymroxv.mp3">"is that last night Voldemort turned up in Godric's Hollow. He went to find the Potters. The rumor is that Lily and James Potter are -- are -- that they're -- dead."</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ljejzbyaaq.mp3">"I know... I know..."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ufnqjjzwcg.mp3">"Lily and James... I can't believe it... I didn't want to believe it... Oh, Albus..."</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/ubdmmpgcnl.mp3">"That's not all. They're saying he tried to kill the Potter's son, Harry. But -- he couldn't. He couldn't kill that little boy. No one knows why, or how, but they're saying that when he couldn't kill Harry Potter, Voldemort's power somehow broke -- and that's why he's gone."</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/rqeswfxmjg.mp3">"It's -- it's true?"</dialogue>
+            <dialogue id="Professor McGonagall" character_image="clear_characters/mOVMIAoXK6.png" character_voice="vits-eng-170" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/oqvwjiiyit.mp3">"After all he's done... all the people he's killed... he couldn't kill a little boy? It's just astounding... of all the things to stop him... but how in the name of heaven did Harry survive?"</dialogue>
+            <dialogue id="Albus Dumbledore" character_image="clear_characters/sVVju8QOE1.png" character_voice="vits-eng-201" tts_audio="/Users/cisco/Documents/CisStuff/corny/audio/mipgaxchzx.mp3">"We can only guess."</dialogue>
         </dialogues>
     </scene>
 </scenes>

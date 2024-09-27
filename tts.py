@@ -3,7 +3,7 @@ import json
 from pydub import AudioSegment
 
 import random
-def get_audio(text:str, voice_id:str="us-male-2", model:str="style-diff-500")->str: #returns path to saved audio file
+def get_audio(text:str, voice_id:str="us-male-2", model:str="vits")->str: #returns path to saved audio file
     response = requests.request(
     method="POST",
     url="https://api.neets.ai/v1/tts",
@@ -20,10 +20,17 @@ def get_audio(text:str, voice_id:str="us-male-2", model:str="style-diff-500")->s
     }
     )
     #filename is random
-    filename = "".join(random.choices("abcdefghijklmnopqrstuvwxyz", k=10))
-    with open(filename, "wb") as f:
+    import os
+
+    audio_folder = "/Users/cisco/Documents/CisStuff/corny/audio"
+    filename = "".join(random.choices("abcdefghijklmnopqrstuvwxyz", k=10)) + ".mp3"
+    full_path = os.path.join(audio_folder, filename)
+    
+    os.makedirs(audio_folder, exist_ok=True)
+    
+    with open(full_path, "wb") as f:
         f.write(response.content)
-    return filename
+    return full_path
 
 
 def get_audio_length(filename: str) -> float:

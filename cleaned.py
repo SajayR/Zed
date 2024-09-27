@@ -15,6 +15,8 @@ from rembg import remove
 import urllib.request
 import re
 from groq import Groq
+import vid_gen
+
 
 client_groq = Groq(
     api_key=os.environ.get("GROQ_API_KEY"),
@@ -221,6 +223,7 @@ def get_scene_info(section_text: str, character_names: list) -> str:
         return response_text
 
 def process_scenes(screenplay_file: str, db, novel_text: str, start_index: int = 0):
+    print("Processing scenes")
     if os.path.exists(screenplay_file):
         tree = ET.parse(screenplay_file)
         root = tree.getroot()
@@ -229,7 +232,7 @@ def process_scenes(screenplay_file: str, db, novel_text: str, start_index: int =
         tree = ET.ElementTree(root)
 
     scenes = root.findall('scene')
-    for i, scene in enumerate(scenes[start_index:], start=start_index):
+    for i, scene in tqdm.tqdm(enumerate(scenes[start_index:], start=start_index)):
         # Generate background image
         background = scene.find('background')
         if background is not None and 'image' not in background.attrib:
@@ -241,11 +244,16 @@ def process_scenes(screenplay_file: str, db, novel_text: str, start_index: int =
         dialogues = scene.find('dialogues')
         if dialogues is not None:
             for dialogue in dialogues.findall('dialogue'):
-                if 'character_image' not in dialogue.attrib or 'character_voice' not in dialogue.attrib:
+                if 'character_image' not in dialogue.attrib or 'character_voice' not in dialogue.attrib or 'tts_audio' not in dialogue.attrib:
                     character_name = dialogue.get('id')
                     character_info = get_or_create_character(db, character_name, novel_text)
                     dialogue.set('character_image', character_info['image'])
                     dialogue.set('character_voice', character_info['voice'])
+                    
+                    # Generate TTS audio
+                    dialogue_text = dialogue.text
+                    tts_audio_file = tts.get_audio(dialogue_text, voice_id=character_info['voice'])
+                    dialogue.set('tts_audio', tts_audio_file)
         
         # Save progress after each scene
         tree.write(screenplay_file, encoding='unicode')
@@ -329,68 +337,12 @@ def main(file_path: str):
     
     # Generate the screenplay XML if it doesn't exist
     if not os.path.exists(screenplay_file):
+        print("Generating screenplay")
+        # Set the databases to empty
+        db['characters'].delete_many({})
+        #db['scenes'].delete_many({})
+        print("Databases cleared. Ready to generate screenplay.")
         generate_screenplay(text, num_char_at_a_time, screenplay_file, character_names)
-
-    # Check if the screenplay file exists to resume from where it left off
-    '''
-    screenplay = "<scenes>"+"\n"
-
-
-    print("Length of the text is ", len(text))
-
-    with open(screenplay_file, "w") as file:
-        file.write("<scenes>")
-    
-    for i in tqdm.tqdm(range(0, len(text), num_char_at_a_time)):
-        section_text = text[i:i+num_char_at_a_time]
-        while True:
-            try:
-                scene_text = get_scene_info(section_text, character_names)
-            except:
-                continue
-
-            if First:
-                scene_text = scene_text.strip().rstrip('</scenes>')
-                First = False
-            elif i + num_char_at_a_time < len(text):
-                scene_text = scene_text.replace('<scenes>', '').replace('</scenes>', '').strip()
-            else:
-                scene_text = scene_text.lstrip('<scenes>').strip()
-
-            if "xml" in scene_text:
-                scene_text = scene_text.replace("xml", "")
-
-            pattern = re.compile(r'(<scene>.*?</scene>)', re.DOTALL)
-            matches = pattern.findall(scene_text)
-            scene_text = ' '.join(matches)
-            print("SCENE TEXT:", scene_text, "\n\n\n\n")
-
-            if check_xml_structure("<scenes>" + scene_text + "</scenes>"):
-                # If valid XML, break the while loop and continue
-                #the character names are in the id attribute for each dialogue in dialogues
-                #we need to extract them and add them to the character_names list
-                # Extract character names from the scene_text
-                scene_root = ET.fromstring("<scenes>" + scene_text + "</scenes>")
-                for scene in scene_root.findall('scene'):
-                    dialogues = scene.find('dialogues')
-                    if dialogues is not None:
-                        for dialogue in dialogues:
-                            character_id = dialogue.get('id')
-                            if character_id and character_id not in character_names:
-                                character_names.append(character_id)
-                
-                print(f"Updated character names: {character_names}")
-                break
-            else:
-                print(f"Invalid scene XML, retrying scene from offset {i}")
-
-        # Incrementally save valid scene_text to the screenplay file
-        with open(screenplay_file, "a") as file:
-            file.write(scene_text)
-
-    # Close the screenplay with </scenes> at the end
-    with open(screenplay_file, "a") as file:
-        file.write("</scenes>")'''
 
     process_scenes(screenplay_file, db, text, start_index)
 

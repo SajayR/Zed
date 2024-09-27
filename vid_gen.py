@@ -6,6 +6,7 @@ from io import BytesIO
 import tempfile
 import os
 from textwrap import wrap
+import subprocess
 
 def parse_xml(xml_file):
     tree = ET.parse(xml_file)
@@ -18,7 +19,9 @@ def parse_xml(xml_file):
             dialogues.append({
                 'id': dialogue.get('id'),
                 'character_image': dialogue.get('character_image'),
-                'text': dialogue.text
+                'text': dialogue.text,
+                'tts_audio': dialogue.get('tts_audio')
+                
             })
         scenes.append({'background': background, 'dialogues': dialogues})
     return scenes
@@ -86,10 +89,19 @@ def create_frame(background_url, left_char_path, right_char_path, dialogue_text,
     background.save(frame_path)
     return frame_path
 
+import subprocess
+import os
+from pydub import AudioSegment
+import tempfile
 import tqdm
+
+def get_audio_duration(audio_file):
+    audio = AudioSegment.from_file(audio_file)
+    return len(audio) / 1000.0  # Convert milliseconds to seconds
+
 def create_video(scenes, output_file):
-    frame_rate = 1  # 1 frame per second for simplicity
     frame_files = []
+    audio_files = []
     frame_number = 0
 
     with tempfile.TemporaryDirectory() as temp_dir:
@@ -101,18 +113,50 @@ def create_video(scenes, output_file):
                 else:
                     left_char_path = None
                 right_char_path = None  # We're not handling multiple characters in this example
+                
                 frame_path = create_frame(background_url, left_char_path, right_char_path, dialogue['text'], frame_number)
                 frame_files.append(frame_path)
+                print(dialogue)
+                audio_file = dialogue['tts_audio']
+                if os.path.exists(audio_file):
+                    audio_files.append(audio_file)
+                else:
+                    # Create a silent audio file if the TTS audio doesn't exist
+                    silent_audio = AudioSegment.silent(duration=3000)  # 3 seconds of silence
+                    silent_audio_path = os.path.join(temp_dir, f"silent_{frame_number}.wav")
+                    silent_audio.export(silent_audio_path, format="wav")
+                    audio_files.append(silent_audio_path)
+                
                 frame_number += 1
 
-        # Use ffmpeg to create video from frames
-        (
-            ffmpeg
-            .input('frame_%04d.png', framerate=frame_rate)
-            .output(output_file, vcodec='libx264')
-            .overwrite_output()
-            .run()
-        )
+        # Prepare ffmpeg command
+        ffmpeg_cmd = ['ffmpeg']
+        
+        # Add input files
+        for frame, audio in zip(frame_files, audio_files):
+            ffmpeg_cmd.extend(['-i', frame, '-i', audio])
+        
+        # Prepare filter complex
+        filter_complex = []
+        for i in range(len(frame_files)):
+            filter_complex.append(f'[{i*2}:v][{i*2+1}:a]')
+        
+        filter_complex.append(f'concat=n={len(frame_files)}:v=1:a=1[outv][outa]')
+        
+        # Complete the ffmpeg command
+        ffmpeg_cmd.extend([
+            '-filter_complex', ''.join(filter_complex),
+            '-map', '[outv]',
+            '-map', '[outa]',
+            output_file
+        ])
+        
+        # Execute ffmpeg command
+        try:
+            subprocess.run(ffmpeg_cmd, check=True)
+            print(f"Video created successfully: {output_file}")
+        except subprocess.CalledProcessError as e:
+            print(f"Error creating video: {e}")
 
         # Clean up frame files
         for file in frame_files:
