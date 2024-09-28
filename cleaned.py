@@ -137,40 +137,60 @@ def get_new_character_info(character_name: str, novel_text: str) -> dict:
 
     return character_info
 
+from pymongo.errors import DuplicateKeyError
+from pymongo import ReturnDocument
+
 def get_or_create_character(db, character_name: str, novel_text: str) -> dict:
     characters_collection = db['characters']
-    character = characters_collection.find_one({"name": character_name})
-    
-    if character is None:
+
+    # Attempt to insert a placeholder character document
+    try:
+        character = characters_collection.find_one_and_update(
+            {"name": character_name},
+            {"$setOnInsert": {
+                "name": character_name,
+                "description": None,
+                "gender": None,
+                "image": None,
+                "voice": None
+            }},
+            upsert=True,
+            return_document=ReturnDocument.AFTER
+        )
+    except DuplicateKeyError:
+        # If a duplicate key error occurs, retrieve the existing character
+        character = characters_collection.find_one({"name": character_name})
+
+    # If the character info is incomplete, generate and update it
+    if character['description'] is None:
         character_info = get_new_character_info(character_name, novel_text)
         image_online_link = generate_character(character_info["description"])
-        #download the image
-        #offline name should be random string of length 10
-        # Create the 'characters' directory if it doesn't exist
         os.makedirs('/Users/cisco/Documents/CisStuff/corny/characters', exist_ok=True)
-        
-        # Generate the random filename and create the full path
         random_filename = ''.join(random.choices(string.ascii_letters + string.digits, k=10)) + ".png"
         offline_image_path = os.path.join('characters', random_filename)
         urllib.request.urlretrieve(image_online_link, offline_image_path)
         image = clear_background(offline_image_path)
         voicelist = femalevoices if character_info["gender"].lower() == "female" else malevoices
-        voice = random.choice(voicelist) if character_info["name"].lower()!="narrator" else "morgan-freeman"
-        voicelist.remove(voice) if character_info["name"].lower()!="narrator" else None
-        
-        character_doc = {
-            "name": character_info["name"],
-            "description": character_info["description"],
-            "gender": character_info["gender"],
-            "image": image,
-            "voice": voice
-        }
-        
-        characters_collection.insert_one(character_doc)
-        return character_doc
-    else:
-        #character is of the form {name: ..., description: ..., gender: ..., image: ..., voice: ...}
-        return character
+        voice = random.choice(voicelist) if character_info["name"].lower() != "narrator" else "morgan-freeman"
+        if character_info["name"].lower() != "narrator":
+            voicelist.remove(voice)
+
+        # Update the character document
+        characters_collection.update_one(
+            {"name": character_name},
+            {"$set": {
+                "description": character_info["description"],
+                "gender": character_info["gender"],
+                "image": image,
+                "voice": voice
+            }}
+        )
+        # Retrieve the updated character
+        character = characters_collection.find_one({"name": character_name})
+
+    return character
+
+
     
 
 def get_scene_info(section_text: str, character_names: list) -> str:
@@ -236,14 +256,12 @@ from functools import partial
 def process_dialogue(dialogue, db, novel_text, character_info_cache):
     if 'character_image' not in dialogue.attrib or 'character_voice' not in dialogue.attrib or 'tts_audio' not in dialogue.attrib:
         character_name = dialogue.get('id')
-        
-        # Use cached character info if available, otherwise fetch and cache it
         if character_name not in character_info_cache:
             character_info = get_or_create_character(db, character_name, novel_text)
             character_info_cache[character_name] = character_info
         else:
             character_info = character_info_cache[character_name]
-        
+
         dialogue.set('character_image', character_info['image'])
         dialogue.set('character_voice', character_info['voice'])
         
@@ -371,32 +389,30 @@ def update_character_names(scene_text, character_names):
 
 def main(file_path: str):
     text = extract_text_from_pdf(file_path)
-    pdf_name = file_path.split("/")[-1].split(".")[0]
+    pdf_name = os.path.splitext(os.path.basename(file_path))[0]
     db = client[pdf_name.replace(" ", "_")]
-    character_names = []
-    
     characters_collection = db['characters']
-    scenes_collection = db['scenes']
-    
+    characters_collection.create_index("name", unique=True)
+
     num_char_at_a_time = 2048
     screenplay_file = "screenplay.xml"
-    
-    # Check if we're resuming from a previous run
-    start_index = 0
-    #if os.path.exists('progress.txt'):
-       # with open('progress.txt', 'r') as f:
-            #start_index = int(f.read().strip())
-    
-    # Generate the screenplay XML if it doesn't exist
+
     if not os.path.exists(screenplay_file):
         print("Generating screenplay")
-        # Set the databases to empty
         db['characters'].delete_many({})
-        #db['scenes'].delete_many({})
         print("Databases cleared. Ready to generate screenplay.")
-        generate_screenplay(text, num_char_at_a_time, screenplay_file, character_names)
-    
-    process_scenes(screenplay_file, db, text, start_index)
+        generate_screenplay(text, num_char_at_a_time, screenplay_file, [])
+
+        # Collect all character names
+        character_names = collect_character_names(screenplay_file)
+        print(f"Found characters: {character_names}")
+
+        # Create character info for all characters
+        for character_name in character_names:
+            get_or_create_character(db, character_name, text)
+
+        # Now process scenes
+        process_scenes(screenplay_file, db, text)
 
     print("Screenplay processing complete. Updated XML saved to", screenplay_file)
 
@@ -404,8 +420,23 @@ def main(file_path: str):
     output_video_file = f"{pdf_name}.mp4"
     scenes=vid_gen.parse_xml(screenplay_file)
     vid_gen.create_video(scenes, output_video_file)
+
   
     
+def collect_character_names(screenplay_file):
+    tree = ET.parse(screenplay_file)
+    root = tree.getroot()
+    character_names = set()
+    for scene in root.findall('scene'):
+        dialogues = scene.find('dialogues')
+        if dialogues is not None:
+            for dialogue in dialogues.findall('dialogue'):
+                character_name = dialogue.get('id')
+                if character_name:
+                    character_names.add(character_name)
+    return character_names
+
+
 if __name__ == "__main__":
     test_pdf_path = "/Users/cisco/Documents/CisStuff/corny/harry_tiny.pdf"
     main(test_pdf_path)

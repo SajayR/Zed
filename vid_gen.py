@@ -141,7 +141,7 @@ def create_video(scenes, output_file):
                     current_char_path = os.path.join('/Users/cisco/Documents/CisStuff/corny', dialogue['character_image'])
                 
                 last_char_path = None
-                if last_character and last_character != dialogue['id']:
+                if last_character and last_character['id'] != dialogue['id']:
                     last_char_path = os.path.join('/Users/cisco/Documents/CisStuff/corny', last_character['character_image'])
 
                 frame_path = create_frame(background_url, current_char_path, last_char_path, dialogue['text'], frame_number, dialogue['id'])
@@ -172,8 +172,7 @@ def create_video(scenes, output_file):
                 # Update last character
                 if dialogue['id'].lower() != "narrator":
                     last_character = dialogue
-
-        # Write the list of segments into a file
+                    
         filelist_path = os.path.join(temp_dir, 'filelist.txt')
         with open(filelist_path, 'w') as f:
             for segment_file in video_segments:
