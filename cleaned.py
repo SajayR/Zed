@@ -50,7 +50,8 @@ def generate_background(prompt: str) -> str:
             "num_outputs": 1,
             "aspect_ratio": "16:9",
             "output_format": "webp",
-            "output_quality": 80
+            "output_quality": 80,
+            "disable_safety_checker": True
         }
     )
     return output[0] #returns the image path (online link)
@@ -75,7 +76,8 @@ def generate_character(prompt: str) -> str:
             "num_outputs": 1,
             "aspect_ratio": "1:1",
             "output_format": "webp",
-            "output_quality": 80
+            "output_quality": 80,
+            "disable_safety_checker": True
         }
     )
     return output[0] #returns the image path (online link)
@@ -405,5 +407,5 @@ def main(file_path: str):
   
     
 if __name__ == "__main__":
-    test_pdf_path = "/Users/cisco/Documents/CisStuff/corny/Harry_Pot_3chaps.pdf"
+    test_pdf_path = "/Users/cisco/Documents/CisStuff/corny/harry_tiny.pdf"
     main(test_pdf_path)

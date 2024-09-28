@@ -28,7 +28,7 @@ def parse_xml(xml_file):
 
 import os
 
-def create_frame(background_url, left_char_path, right_char_path, dialogue_text, frame_number, speaker_name):
+def create_frame(background_url, current_char_path, last_char_path, dialogue_text, frame_number, speaker_name):
     # Download and open background image
     try:
         response = requests.get(background_url)
@@ -41,12 +41,14 @@ def create_frame(background_url, left_char_path, right_char_path, dialogue_text,
 
     # Function to load and resize image while maintaining aspect ratio
     def load_and_resize_image(path, max_width, max_height):
-        if "https://" in path:
+        if path and "https://" in path:
             response = requests.get(path)
             response.raise_for_status()
             img = Image.open(BytesIO(response.content)).convert('RGBA')
-        else:
+        elif path:
             img = Image.open(path).convert('RGBA')
+        else:
+            return None
         
         # Calculate aspect ratio
         aspect_ratio = img.width / img.height
@@ -62,24 +64,26 @@ def create_frame(background_url, left_char_path, right_char_path, dialogue_text,
         return img.resize((new_width, new_height), Image.LANCZOS)
 
     # Add characters if paths are provided
-    max_char_width = int(1344 * 0.3)
+    max_char_width = int(1344 * 0.25)  # Reduced width to fit two characters
     max_char_height = int(768 * 0.8)
     
-    if left_char_path:
+    if current_char_path and speaker_name.lower() != "narrator":
         try:
-            left_char = load_and_resize_image(left_char_path, max_char_width, max_char_height)
-            left_pos = (int(1344 * 0.1), 768 - left_char.height)
-            background.paste(left_char, left_pos, left_char)
+            current_char = load_and_resize_image(current_char_path, max_char_width, max_char_height)
+            if current_char:
+                left_pos = (int(1344 * 0.05), 768 - current_char.height)
+                background.paste(current_char, left_pos, current_char)
         except Exception as e:
-            print(f"Error opening left character image: {e}")
+            print(f"Error opening current character image: {e}")
 
-    if right_char_path:
+    if last_char_path and speaker_name.lower() != "narrator":
         try:
-            right_char = load_and_resize_image(right_char_path, max_char_width, max_char_height)
-            right_pos = (1344 - int(1344 * 0.1) - right_char.width, 768 - right_char.height)
-            background.paste(right_char, right_pos, right_char)
+            last_char = load_and_resize_image(last_char_path, max_char_width, max_char_height)
+            if last_char:
+                right_pos = (1344 - int(1344 * 0.05) - last_char.width, 768 - last_char.height)
+                background.paste(last_char, right_pos, last_char)
         except Exception as e:
-            print(f"Error opening right character image: {e}")
+            print(f"Error opening last character image: {e}")
 
     # Add dialogue box
     draw = ImageDraw.Draw(background)
@@ -125,19 +129,22 @@ import tqdm
 def create_video(scenes, output_file):
     frame_number = 0
     video_segments = []
+    last_character = None
 
     with tempfile.TemporaryDirectory() as temp_dir:
         for scene in tqdm.tqdm(scenes):
             background_url = scene['background']
             for dialogue in scene['dialogues']:
                 # Prepare frame
-                if dialogue['id'] != "Narrator":
-                    left_char_path = os.path.join('/Users/cisco/Documents/CisStuff/corny', dialogue['character_image'])
-                else:
-                    left_char_path = None
-                right_char_path = None
+                current_char_path = None
+                if dialogue['id'].lower() != "narrator":
+                    current_char_path = os.path.join('/Users/cisco/Documents/CisStuff/corny', dialogue['character_image'])
+                
+                last_char_path = None
+                if last_character and last_character != dialogue['id']:
+                    last_char_path = os.path.join('/Users/cisco/Documents/CisStuff/corny', last_character['character_image'])
 
-                frame_path = create_frame(background_url, left_char_path, right_char_path, dialogue['text'], frame_number, dialogue['id'])
+                frame_path = create_frame(background_url, current_char_path, last_char_path, dialogue['text'], frame_number, dialogue['id'])
 
                 # Prepare audio
                 audio_file = dialogue['tts_audio']
@@ -161,6 +168,10 @@ def create_video(scenes, output_file):
                 video_segments.append(segment_file)
 
                 frame_number += 1
+
+                # Update last character
+                if dialogue['id'].lower() != "narrator":
+                    last_character = dialogue
 
         # Write the list of segments into a file
         filelist_path = os.path.join(temp_dir, 'filelist.txt')
