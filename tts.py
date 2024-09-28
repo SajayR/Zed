@@ -9,7 +9,7 @@ def get_audio(text:str, voice_id:str="us-male-2", model:str="ar-diff-50k")->str:
     url="https://api.neets.ai/v1/tts",
     headers={
         "Content-Type": "application/json",
-        "X-API-Key": "8a931ab0981d432d96a59605635c51fd"
+        "X-API-Key": "c4ddea5a952a415d87a79e41177e4da8"
     },
     json={
         "text": text,

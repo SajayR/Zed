@@ -18,7 +18,7 @@ from groq import Groq
 from pydub import AudioSegment
 import vid_gen
 
-
+from google.generativeai.types import HarmCategory, HarmBlockThreshold
 client_groq = Groq(
     api_key=os.environ.get("GROQ_API_KEY"),
 )
@@ -28,7 +28,7 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 malevoices=["vits-eng-2", "vits-eng-4", "vits-eng-5", "vits-eng-6", "vits-eng-10", "vits-eng-11", "vits-eng-12", "vits-eng-16", "vits-eng-18", "vits-eng-19", "vits-eng-25", "vits-eng-26", "vits-eng-28", "vits-eng-30", "vits-eng-31", "vits-eng-33", "vits-eng-34", "vits-eng-36", "vits-eng-39", "vits-eng-42", "vits-eng-44", "vits-eng-47", "vits-eng-56", "vits-eng-59", "vits-eng-64", "vits-eng-66", "vits-eng-69", "vits-eng-71", "vits-eng-74", "vits-eng-76", "vits-eng-77", "vits-eng-78", "vits-eng-82", "vits-eng-83", "vits-eng-86", "vits-eng-88", "vits-eng-89", "vits-eng-97", "vits-eng-98", "vits-eng-100", "vits-eng-101", "vits-eng-102", "vits-eng-103", "vits-eng-107", "vits-eng-109", "vits-eng-110", "vits-eng-111", "vits-eng-115", "vits-eng-116", "vits-eng-118", "vits-eng-121", "vits-eng-122", "vits-eng-123", "vits-eng-124", "vits-eng-125", "vits-eng-127", "vits-eng-128", "vits-eng-130", "vits-eng-131", "vits-eng-132", "vits-eng-133", "vits-eng-139", "vits-eng-141", "vits-eng-143", "vits-eng-160", "vits-eng-163", "vits-eng-164", "vits-eng-165", "vits-eng-171", "vits-eng-172", "vits-eng-173", "vits-eng-175", "vits-eng-177", "vits-eng-180", "vits-eng-181", "vits-eng-184", "vits-eng-185", "vits-eng-186", "vits-eng-192", "vits-eng-193", "vits-eng-194", "vits-eng-198", "vits-eng-199", "vits-eng-200", "vits-eng-201", "vits-eng-202", "vits-eng-203", "vits-eng-205", "vits-eng-217", "vits-eng-221", "vits-eng-222", "vits-eng-223", "vits-eng-226", "vits-eng-229", "vits-eng-232", "vits-eng-233", "vits-eng-235", "vits-eng-237", "vits-eng-238", "vits-eng-239"]
 femalevoices=["vits-eng-3", "vits-eng-7", "vits-eng-8", "vits-eng-9", "vits-eng-13", "vits-eng-14", "vits-eng-15", "vits-eng-17", "vits-eng-20", "vits-eng-21", "vits-eng-22", "vits-eng-23", "vits-eng-24", "vits-eng-27", "vits-eng-29", "vits-eng-32", "vits-eng-35", "vits-eng-37", "vits-eng-38", "vits-eng-40", "vits-eng-41", "vits-eng-43", "vits-eng-45", "vits-eng-46", "vits-eng-48", "vits-eng-49", "vits-eng-50", "vits-eng-51", "vits-eng-52", "vits-eng-53", "vits-eng-54", "vits-eng-55", "vits-eng-57", "vits-eng-58", "vits-eng-60", "vits-eng-61", "vits-eng-62", "vits-eng-63", "vits-eng-65", "vits-eng-67", "vits-eng-68", "vits-eng-70", "vits-eng-72", "vits-eng-73", "vits-eng-75", "vits-eng-79", "vits-eng-80", "vits-eng-81", "vits-eng-84", "vits-eng-85", "vits-eng-87", "vits-eng-90", "vits-eng-91", "vits-eng-92", "vits-eng-93", "vits-eng-94", "vits-eng-95", "vits-eng-96", "vits-eng-99", "vits-eng-104", "vits-eng-105", "vits-eng-106", "vits-eng-108", "vits-eng-112", "vits-eng-113", "vits-eng-114", "vits-eng-117", "vits-eng-119", "vits-eng-120", "vits-eng-126", "vits-eng-129", "vits-eng-134", "vits-eng-136", "vits-eng-137", "vits-eng-150", "vits-eng-157", "vits-eng-159", "vits-eng-166", "vits-eng-167", "vits-eng-168", "vits-eng-169", "vits-eng-170", "vits-eng-174", "vits-eng-178", "vits-eng-179", "vits-eng-187", "vits-eng-188", "vits-eng-189", "vits-eng-190", "vits-eng-191", "vits-eng-195", "vits-eng-196", "vits-eng-197", "vits-eng-204", "vits-eng-207", "vits-eng-209", "vits-eng-210", "vits-eng-212", "vits-eng-213", "vits-eng-214"]
 femalevoices=["angela-merkel", "angie", "anna-kendrick", "ariana-grande", "beyonce", "billie-eilish", "cardi-b", "demi-lovato", "elizabeth-holmes", "ellen-degeneres", "emma-watson", "greta-thunberg", "hillary-clinton", "kamala-harris", "kardashian", "pokimane", "rachel-maddow", "scarlett-johansson", "taylor-swift", "uk-female-1", "us-female-7", "us-female-8", "us-female-9", "us-female-10", "us-female-11", "us-female-12", "us-female-13", "us-female-14", "us-female-15", "us-female-16", "us-female-17", "us-female-18"]
-malevoices=["50-cent", "alex-jones", "anderson-cooper","andrew-tate","andrew-yang", "anthony-fauci", "antonio-banderas", "arnold-schwarzenegger", "ben-affleck", "ben-shapiro", "bernie-sanders", "bill-clinton", "bill-gates", "bill-oreilly", "casey-affleck", "charlamagne", "conor-mcgregor", "darth-vader", "dj-khaled", "donald-trump", "dr-dre", "dr-phil", "drake", "dwayne-johnson", "elon-musk", "gilbert-gottfried", "jason-alexander", "jay-z", "jeff-bezos", "jerry-seinfeld", "jim-cramer", "joe-biden", "joe-rogan", "john-cena", "jordan-peterson", "justin-bieber", "justin-trudeau", "kanye-west", "kevin-hart", "lex-fridman", "lil-wayne", "mark-zuckerberg", "martin-shkreli", "matt-damon", "matthew-mcconaughey", "mike-tyson", "morgan-freeman", "patrick-stewart", "paul-mccartney", "prince-harry", "rober-downey-jr", "ron-desantis", "sam-altman", "samuel-jackson", "sbf", "sean-hannity", "snoop-dogg", "stephen-hawking", "tucker-carlson", "tupac", "warren-buffett", "will-smith", "william", "uk-male-1", "uk-male-2", "uk-male-3", "uk-male-4", "uk-male-5", "uk-male-6", "uk-male-7", "uk-male-8", "us-male-6", "us-male-7", "us-male-8", "us-male-9", "us-male-10", "us-male-11", "us-male-12", "us-male-13", "us-male-14", "us-male-15", "us-male-16"]
+malevoices=["50-cent", "alex-jones", "anderson-cooper","andrew-tate","andrew-yang", "anthony-fauci", "antonio-banderas", "arnold-schwarzenegger", "ben-affleck", "ben-shapiro", "bernie-sanders", "bill-clinton", "bill-gates", "bill-oreilly", "casey-affleck", "charlamagne", "conor-mcgregor", "darth-vader", "dj-khaled", "donald-trump", "dr-dre", "dr-phil", "drake", "dwayne-johnson", "elon-musk", "gilbert-gottfried", "jason-alexander", "jay-z", "jeff-bezos", "jerry-seinfeld", "jim-cramer", "joe-biden", "joe-rogan", "john-cena", "jordan-peterson", "justin-bieber", "justin-trudeau", "kanye-west", "kevin-hart", "lex-fridman", "lil-wayne", "mark-zuckerberg", "martin-shkreli", "matt-damon", "matthew-mcconaughey", "mike-tyson", "patrick-stewart", "paul-mccartney", "prince-harry", "rober-downey-jr", "ron-desantis", "sam-altman", "samuel-jackson", "sbf", "sean-hannity", "snoop-dogg", "stephen-hawking", "tucker-carlson", "tupac", "warren-buffett", "will-smith", "william", "uk-male-1", "uk-male-2", "uk-male-3", "uk-male-4", "uk-male-5", "uk-male-6", "uk-male-7", "uk-male-8", "us-male-6", "us-male-7", "us-male-8", "us-male-9", "us-male-10", "us-male-11", "us-male-12", "us-male-13", "us-male-14", "us-male-15", "us-male-16"]
 
 def clear_background(image_path: str)->str:
     print("Path recieved ", image_path)
@@ -105,13 +105,26 @@ def get_new_character_info(character_name: str, novel_text: str) -> dict:
         "top_k": 64,
         "max_output_tokens": 8192,
         "response_mime_type": "text/plain",
+        #"safety_settings": [{"harm_block_level": "block_none"}],
     }
     model = genai.GenerativeModel(
         model_name="gemini-1.5-flash",
         generation_config=generation_config,
+        safety_settings={
+        HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
+        HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
+        }
     )
     chat_session = model.start_chat(history=[])
-    response = chat_session.send_message(instruction).text
+    while True:
+        try:
+            response = chat_session.send_message(instruction).text
+            break
+        except Exception as e:
+            print(e)
+            continue
     response = re.search(r'<character>.*?</character>', response, re.DOTALL)
     xml_data = ET.fromstring(response.group(0))
     character_info = {
@@ -140,8 +153,8 @@ def get_or_create_character(db, character_name: str, novel_text: str) -> dict:
         urllib.request.urlretrieve(image_online_link, offline_image_path)
         image = clear_background(offline_image_path)
         voicelist = femalevoices if character_info["gender"].lower() == "female" else malevoices
-        voice = random.choice(voicelist)
-        voicelist.remove(voice)
+        voice = random.choice(voicelist) if character_info["name"].lower()!="narrator" else "morgan-freeman"
+        voicelist.remove(voice) if character_info["name"].lower()!="narrator" else None
         
         character_doc = {
             "name": character_info["name"],
@@ -381,7 +394,7 @@ def main(file_path: str):
         print("Databases cleared. Ready to generate screenplay.")
         generate_screenplay(text, num_char_at_a_time, screenplay_file, character_names)
     
-        process_scenes(screenplay_file, db, text, start_index)
+    process_scenes(screenplay_file, db, text, start_index)
 
     print("Screenplay processing complete. Updated XML saved to", screenplay_file)
 
@@ -392,5 +405,5 @@ def main(file_path: str):
   
     
 if __name__ == "__main__":
-    test_pdf_path = "/Users/cisco/Documents/CisStuff/corny/Harry_Pot.pdf"
+    test_pdf_path = "/Users/cisco/Documents/CisStuff/corny/Harry_Pot_3chaps.pdf"
     main(test_pdf_path)

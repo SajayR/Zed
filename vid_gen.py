@@ -28,7 +28,7 @@ def parse_xml(xml_file):
 
 import os
 
-def create_frame(background_url, left_char_path, right_char_path, dialogue_text, frame_number):
+def create_frame(background_url, left_char_path, right_char_path, dialogue_text, frame_number, speaker_name):
     # Download and open background image
     try:
         response = requests.get(background_url)
@@ -93,7 +93,8 @@ def create_frame(background_url, left_char_path, right_char_path, dialogue_text,
     # Wrap and draw text
     margin = 20
     max_width = 1344 - 2 * margin
-    wrapped_text = wrap(dialogue_text, width=int(max_width / font.getlength("x")))
+    full_text = f"{speaker_name}: {dialogue_text}"
+    wrapped_text = wrap(full_text, width=int(max_width / font.getlength("x")))
     y_text = 628
     for line in wrapped_text:
         line_width = draw.textlength(line, font=font)
@@ -136,11 +137,10 @@ def create_video(scenes, output_file):
                     left_char_path = None
                 right_char_path = None
 
-                frame_path = create_frame(background_url, left_char_path, right_char_path, dialogue['text'], frame_number)
+                frame_path = create_frame(background_url, left_char_path, right_char_path, dialogue['text'], frame_number, dialogue['id'])
 
                 # Prepare audio
                 audio_file = dialogue['tts_audio']
-                # Ensure audio duration matches the frame duration
 
                 # Generate video segment
                 segment_file = os.path.join(temp_dir, f'segment_{frame_number}.mp4')
@@ -181,7 +181,6 @@ def create_video(scenes, output_file):
         subprocess.run(ffmpeg_cmd, check=True)
 
     print(f"Video created successfully: {output_file}")
-
 
 if __name__ == "__main__":
     xml_file = "/Users/cisco/Documents/CisStuff/corny/screenplay.xml"  # Replace with your XML file path
